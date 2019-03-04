@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 header {
-  height: 8%;
-
+  height: 11%;
+  width: 100%;
+  position:fixed;
+  top:0;
+  transition: 0.5s;
   nav {
     height: 100%;
     display: flex;
@@ -11,8 +14,11 @@ header {
     list-style: none;
     color:white;
     font-family: 'Open Sans', sans-serif;
-    font-size:12px;
+    font-size:15px;
     font-weight: bold;
+    .active{
+      color:#46a4d7;
+    }
 
     li{
         margin: 0px 15px;
@@ -25,12 +31,6 @@ header {
           }
         }
     }
-
-    .active{
-      color:#46a4d7;
-    }
-
-
     
   }
 }

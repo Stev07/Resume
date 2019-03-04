@@ -1,0 +1,127 @@
+@charset "UTF-8";
+#main {
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+#main #hello {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black), url(gleb-kozenko-262687-unsplash.b2b9ec46.jpg);
+}@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+header {
+  height: 11%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: 0.5s;
+}
+header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+header nav .active {
+  color: #46a4d7;
+}
+header nav li {
+  margin: 0px 15px;
+}
+header nav li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+header nav li a:hover {
+  color: #46a4d7;
+}* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.content .infoBox {
+  height: 80%;
+  padding-top: 10%;
+}
+.content .infoBox div > h1 {
+  font-size: 70px;
+}
+.content .infoBox div > h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.content .infoBox div > p {
+  width: 50%;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  color: grey;
+  font-size: 18px;
+  line-height: 35px;
+}
+.content .infoBox .separate {
+  width: 400px;
+  height: 1px;
+  background: white;
+  margin: 0 auto;
+}
+.content .infoBox .developer {
+  color: #46a4d7;
+}
+.content .infoBox .social {
+  width: 30%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  font-size: 30px;
+  padding-top: 25px;
+}
+.content .infoBox .social .social-icon {
+  margin: 0 30px;
+  transition: 0.5s;
+}
+.content .infoBox .social .social-icon:hover {
+  color: #46a4d7;
+}
+.content .infoBox .social a {
+  color: white;
+}
+.content .down a {
+  font-size: 35px;
+  color: white;
+  transition: 0.5s;
+}
+.content .down a:hover {
+  font-size: 40px;
+  cursor: pointer;
+}#about {
+  width: 100vw;
+  height: 100vh;
+  background: grey;
+}#resume {
+  width: 100vw;
+  height: 100vh;
+  background: greenyellow;
+}#works {
+  width: 100vw;
+  height: 100vh;
+  background: darkblue;
+}#contact {
+  width: 100vw;
+  height: 100vh;
+  background: darkcyan;
+}

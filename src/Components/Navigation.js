@@ -1,24 +1,78 @@
 import React from "react";
 import "../scss/navigation.scss";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Header extends React.Component {
+  render() {
+    return (
+      <header>
+        <nav>
+          <Link
+            activeClass="active"
+            to="hello"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <li>
+              <a a href="#" class="resizeOnScroll">
+                HELLO
+              </a>
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <li>
+              <a href="#" class="resizeOnScroll">ABOUT</a>
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="resume"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={700}
+          >
+            <li>
+              <a href="#" class="resizeOnScroll">RESUME</a>
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="works"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={850}
+          >
+            <li>
+              <a href="#" class="resizeOnScroll">WORKS</a>
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+          >
+            <li>
+              <a href="#" class="resizeOnScroll">CONTACT</a>
+            </li>
+          </Link>
+        </nav>
+      </header>
+    );
+  }
+}
 
-    
-
-    render() {
-        
-        return (
-            <header>
-                <nav>
-                    <li><a a href='#' className="active">HELLO</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">RESUME</a></li>
-                    <li><a href="#">WORKS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </nav>
-            </header>
-            );
-        }
-    }
-
-export default Header
+export default Header;

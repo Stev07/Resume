@@ -1,5 +1,6 @@
 import React from "react";
 import "../scss/hello.scss";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Hello extends React.Component {
   render() {
@@ -37,7 +38,18 @@ class Hello extends React.Component {
           </div>
         </div>
         <div class="down">
-          <a href="#about"><i class="fas fa-chevron-circle-down" /></a>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <a href="#about">
+              <i class="fas fa-chevron-circle-down" />
+            </a>
+          </Link>
         </div>
       </div>
     );
