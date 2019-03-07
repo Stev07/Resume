@@ -124,21 +124,35 @@ header nav li a:hover {
   width: 100%;
   height: 100%;
   grid-column: 2;
-  grid-row: 1/2;
-  background: url(avatarsteve.4c88650d.png) no-repeat;
-  background-size: contain;
+  grid-row: 1/3;
+  background: url(avatarsteve.4c88650d.png) no-repeat center left;
 }
 #about .about-me {
   width: 100%;
   height: 100%;
   grid-column: 3;
   grid-row: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
-#about .about-contact {
+#about .about-me h4 {
+  color: white;
+}
+#about .about-me p {
+  color: #7a7a7a;
+}
+#about .about-details {
   width: 100%;
   height: 100%;
   grid-column: 3;
   grid-row: 2;
+}
+#about .about-details h4 {
+  color: white;
+}
+#about .about-details p {
+  color: #7a7a7a;
 }
 #about .education {
   height: 45vh;

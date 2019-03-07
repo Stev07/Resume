@@ -28839,8 +28839,8 @@ function (_React$Component) {
       }), _react.default.createElement("div", {
         className: "about-me"
       }, _react.default.createElement("h4", null, "About me"), _react.default.createElement("p", null, "I have finished my B.E. in Computer Science and have been working in industry for past few years.")), _react.default.createElement("div", {
-        className: "about-contact"
-      }, _react.default.createElement("h4", null, "Contact details"), _react.default.createElement("p", null, "Steve Dossin"), _react.default.createElement("p", null, "Belgium, Li\xE8ge"), _react.default.createElement("p", null, "https:www.stevedossin.me"))), _react.default.createElement("section", {
+        className: "about-details"
+      }, _react.default.createElement("h4", null, "Contact details"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("p", null, "Steve Dossin"), _react.default.createElement("p", null, "Belgium, Li\xE8ge"), _react.default.createElement("p", null, "https:www.stevedossin.me"))), _react.default.createElement("section", {
         className: "education"
       }, _react.default.createElement("div", {
         className: "education-title"
@@ -29169,7 +29169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42133" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "32951" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
