@@ -28665,7 +28665,7 @@ function (_React$Component) {
         duration: 1000
       }, _react.default.createElement("li", null, _react.default.createElement("a", {
         href: "#",
-        class: "resizeOnScroll"
+        className: "resizeOnScroll"
       }, "CONTACT")))));
     }
   }]);
@@ -28733,43 +28733,43 @@ function (_React$Component) {
       }, _react.default.createElement("div", {
         className: "infoBox"
       }, _react.default.createElement("div", null, _react.default.createElement("h1", null, _react.default.createElement("span", {
-        class: "developer"
+        className: "developer"
       }, "I am"), " Steve Dossin")), _react.default.createElement("div", {
-        class: ""
+        className: ""
       }, _react.default.createElement("h2", null, "Junior Web ", _react.default.createElement("span", {
-        class: "developer"
+        className: "developer"
       }, "Developer"))), _react.default.createElement("div", null, _react.default.createElement("p", null, "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.")), _react.default.createElement("div", {
-        class: "separate"
+        className: "separate"
       }), _react.default.createElement("div", {
-        class: "social"
+        className: "social"
       }, _react.default.createElement("a", {
         target: "_blank",
         href: "https://www.linkedin.com/in/steve-dossin/"
       }, _react.default.createElement("i", {
-        class: "fab fa-linkedin-in social-icon"
+        className: "fab fa-linkedin-in social-icon"
       })), _react.default.createElement("a", {
         target: "_blank",
         href: "https://github.com/Stev07"
       }, _react.default.createElement("i", {
-        class: "fab fa-github social-icon"
+        className: "fab fa-github social-icon"
       })), _react.default.createElement("a", {
         target: "_blank",
         href: "https://www.npmjs.com/~stevoxxx"
       }, _react.default.createElement("i", {
-        class: "fab fa-npm social-icon"
+        className: "fab fa-npm social-icon"
       })))), _react.default.createElement("div", {
-        class: "down"
+        className: "down"
       }, _react.default.createElement(_reactScroll.Link, {
         activeClass: "active",
         to: "about",
         spy: true,
         smooth: true,
         offset: 0,
-        duration: 500
+        duration: 800
       }, _react.default.createElement("a", {
         href: "#about"
       }, _react.default.createElement("i", {
-        class: "fas fa-chevron-circle-down"
+        className: "fas fa-chevron-circle-down"
       })))));
     }
   }]);
@@ -28784,7 +28784,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/Components/About.js":[function(require,module,exports) {
+},{"./../img/avatarsteve.png":[["avatarsteve.4c88650d.png","src/img/avatarsteve.png"],"src/img/avatarsteve.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/Components/About.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28832,7 +28832,23 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("div", {
         id: "about"
-      }, _react.default.createElement("p", null, "about"));
+      }, _react.default.createElement("section", {
+        className: "about"
+      }, _react.default.createElement("div", {
+        className: "about-img"
+      }), _react.default.createElement("div", {
+        className: "about-me"
+      }, _react.default.createElement("h4", null, "About me"), _react.default.createElement("p", null, "I have finished my B.E. in Computer Science and have been working in industry for past few years.")), _react.default.createElement("div", {
+        className: "about-contact"
+      }, _react.default.createElement("h4", null, "Contact details"), _react.default.createElement("p", null, "Steve Dossin"), _react.default.createElement("p", null, "Belgium, Li\xE8ge"), _react.default.createElement("p", null, "https:www.stevedossin.me"))), _react.default.createElement("section", {
+        className: "education"
+      }, _react.default.createElement("div", {
+        className: "education-title"
+      }, _react.default.createElement("p", null, "Education")), _react.default.createElement("div", {
+        className: "education-item1"
+      }, _react.default.createElement("h4", null, "Becode"), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
+        className: "education-item2"
+      }, _react.default.createElement("h4", null, "Saint-Lambert Herstal"), _react.default.createElement("p", null, "blablablablabla"))));
     }
   }]);
 
@@ -29089,9 +29105,11 @@ function (_React$Component) {
 
       var scrollFunction = function scrollFunction() {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-          document.querySelector("header").style.height = "7vh";
+          document.querySelector("nav").style.background = "rgba(0,0,0,0.4)";
+          document.querySelector("header").style.height = "5vh";
           document.querySelectorAll(".resizeOnScroll").style.fontSize = "11px";
         } else {
+          document.querySelector("nav").style.background = "transparent";
           document.querySelector("header").style.height = "12vh";
           document.querySelectorAll(".resizeOnScroll").style.fontSize = "15px";
         }
@@ -29151,7 +29169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40489" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36547" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

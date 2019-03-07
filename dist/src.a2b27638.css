@@ -111,7 +111,53 @@ header nav li a:hover {
 }#about {
   width: 100vw;
   height: 100vh;
-  background: grey;
+}
+#about .about {
+  height: 55vh;
+  width: 100%;
+  background: #2b2b2b;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
+  grid-template-rows: 50% 50%;
+}
+#about .about-img {
+  width: 100%;
+  height: 100%;
+  grid-column: 2;
+  grid-row: 1/2;
+  background: url(avatarsteve.4c88650d.png) no-repeat;
+  background-size: contain;
+}
+#about .about-me {
+  width: 100%;
+  height: 100%;
+  grid-column: 3;
+  grid-row: 1;
+}
+#about .about-contact {
+  width: 100%;
+  height: 100%;
+  grid-column: 3;
+  grid-row: 2;
+}
+#about .education {
+  height: 45vh;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
+  grid-template-rows: 50% 50%;
+  padding: 20px 0px;
+}
+#about .education .education-title {
+  grid-column: 2;
+  grid-row: 1;
+}
+#about .education .education-item1 {
+  grid-column: 3;
+  grid-row: 1;
+}
+#about .education .education-item2 {
+  grid-column: 3;
+  grid-row: 2;
 }#resume {
   width: 100vw;
   height: 100vh;

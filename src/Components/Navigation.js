@@ -66,7 +66,7 @@ class Header extends React.Component {
             duration={1000}
           >
             <li>
-              <a href="#" class="resizeOnScroll">CONTACT</a>
+              <a href="#" className="resizeOnScroll">CONTACT</a>
             </li>
           </Link>
         </nav>

@@ -9,12 +9,12 @@ class Hello extends React.Component {
         <div className="infoBox">
           <div>
             <h1>
-              <span class="developer">I am</span> Steve Dossin
+              <span className="developer">I am</span> Steve Dossin
             </h1>
           </div>
-          <div class="">
+          <div className="">
             <h2>
-              Junior Web <span class="developer">Developer</span>
+              Junior Web <span className="developer">Developer</span>
             </h2>
           </div>
           <div>
@@ -24,30 +24,30 @@ class Hello extends React.Component {
               simply play games in my free time.
             </p>
           </div>
-          <div class="separate" />
-          <div class="social">
+          <div className="separate" />
+          <div className="social">
             <a target="_blank" href="https://www.linkedin.com/in/steve-dossin/">
-              <i class="fab fa-linkedin-in social-icon" />
+              <i className="fab fa-linkedin-in social-icon" />
             </a>
             <a target="_blank" href="https://github.com/Stev07">
-              <i class="fab fa-github social-icon" />
+              <i className="fab fa-github social-icon" />
             </a>
             <a target="_blank" href="https://www.npmjs.com/~stevoxxx">
-              <i class="fab fa-npm social-icon" />
+              <i className="fab fa-npm social-icon" />
             </a>
           </div>
         </div>
-        <div class="down">
+        <div className="down">
           <Link
             activeClass="active"
             to="about"
             spy={true}
             smooth={true}
             offset={0}
-            duration={500}
+            duration={800}
           >
             <a href="#about">
-              <i class="fas fa-chevron-circle-down" />
+              <i className="fas fa-chevron-circle-down" />
             </a>
           </Link>
         </div>
