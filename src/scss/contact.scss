@@ -1,5 +1,57 @@
 #contact{
     width: 100vw;
     height: 100vh;
-    background: darkcyan;
+    background: #191919;
+
+    .form{
+      height: 50%;
+    }
+    
+    .more{
+      height: 50%;
+      position:relative;
+
+      .footer-info{
+        height: 25vh;
+        width: 100%;
+        background: #0f0f0f;
+        position:absolute;
+        bottom:0;
+
+        .gotop{
+          width: 100%;
+          color:white;
+          font-size:8vh;
+          position:absolute;
+          bottom:21vh;
+          display: flex;
+          justify-content: center;
+
+          i{
+            cursor:pointer;
+          }
+        }
+
+        .social {
+          display: flex;
+          justify-content: center;
+          font-size: 30px;
+          padding-top: 25px;
+          padding-left:10px;
+    
+          .social-icon {
+            padding: 50px 0px;
+            margin: 0 70px;
+            transition: 0.5s;
+            &:hover {
+              color: #46a4d7;
+            }
+          }
+    
+          a {color: white}
+        }
+
+        .made{text-align: center;color:#525252;font-family:sans-serif}
+      }
+    }
   }

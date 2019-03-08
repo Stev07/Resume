@@ -28638,7 +28638,7 @@ function (_React$Component) {
         class: "resizeOnScroll"
       }, "ABOUT"))), _react.default.createElement(_reactScroll.Link, {
         activeClass: "active",
-        to: "resume",
+        to: "education",
         spy: true,
         smooth: true,
         offset: 0,
@@ -28841,10 +28841,11 @@ function (_React$Component) {
       }, _react.default.createElement("h4", null, "About me"), _react.default.createElement("p", null, "I have finished my B.E. in Computer Science and have been working in industry for past few years.")), _react.default.createElement("div", {
         className: "about-details"
       }, _react.default.createElement("h4", null, "Contact details"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("p", null, "Steve Dossin"), _react.default.createElement("p", null, "Belgium, Li\xE8ge"), _react.default.createElement("p", null, "https:www.stevedossin.me"))), _react.default.createElement("section", {
+        id: "education",
         className: "education"
       }, _react.default.createElement("div", {
         className: "education-title"
-      }, _react.default.createElement("p", null, "Education")), _react.default.createElement("div", {
+      }, _react.default.createElement("p", null, "EDUCATION")), _react.default.createElement("div", {
         className: "education-item1"
       }, _react.default.createElement("h4", null, "Becode"), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
         className: "education-item2"
@@ -28910,7 +28911,18 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("div", {
         id: "resume"
-      }, _react.default.createElement("p", null, "Resume"));
+      }, _react.default.createElement("section", {
+        id: "resume",
+        className: "resume"
+      }, _react.default.createElement("div", {
+        className: "resume-title"
+      }, _react.default.createElement("p", null, "WORK")), _react.default.createElement("div", {
+        className: "resume-item1"
+      }, _react.default.createElement("h4", null, "COMPANY"), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
+        className: "resume-item2"
+      }, _react.default.createElement("h4", null, "COMPANY"), _react.default.createElement("p", null, "blablablablabla"))), _react.default.createElement("section", {
+        className: "skills"
+      }, "Skills"));
     }
   }]);
 
@@ -28998,6 +29010,8 @@ var _react = _interopRequireDefault(require("react"));
 
 require("../scss/contact.scss");
 
+var _reactScroll = require("react-scroll");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -29034,7 +29048,44 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("div", {
         id: "contact"
-      }, "contact");
+      }, _react.default.createElement("div", {
+        className: "form"
+      }, "Formulaire"), _react.default.createElement("div", {
+        className: "more"
+      }, "more", _react.default.createElement("footer", null, _react.default.createElement("p", null, "logos"), _react.default.createElement("div", {
+        className: "footer-info"
+      }, _react.default.createElement(_reactScroll.Link, {
+        className: "gotop",
+        activeClass: "active",
+        to: "hello",
+        spy: true,
+        smooth: true,
+        offset: 0,
+        duration: 500
+      }, _react.default.createElement("i", {
+        className: "fas fa-arrow-alt-circle-up"
+      })), _react.default.createElement("div", {
+        className: "social"
+      }, _react.default.createElement("a", {
+        target: "_blank",
+        href: "https://www.linkedin.com/in/steve-dossin/"
+      }, _react.default.createElement("i", {
+        className: "fab fa-linkedin-in social-icon"
+      })), _react.default.createElement("a", {
+        target: "_blank",
+        href: "https://github.com/Stev07"
+      }, _react.default.createElement("i", {
+        className: "fab fa-github social-icon"
+      })), _react.default.createElement("a", {
+        target: "_blank",
+        href: "https://www.npmjs.com/~stevoxxx"
+      }, _react.default.createElement("i", {
+        className: "fab fa-npm social-icon"
+      }))), _react.default.createElement("p", {
+        className: "made"
+      }, "Made with ", _react.default.createElement("i", {
+        className: "fas fa-heart"
+      }), " by", " ", _react.default.createElement("strong", null, "Steve D."))))));
     }
   }]);
 
@@ -29043,7 +29094,7 @@ function (_React$Component) {
 
 var _default = Contact;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../scss/contact.scss":"src/scss/contact.scss"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../scss/contact.scss":"src/scss/contact.scss","react-scroll":"node_modules/react-scroll/modules/index.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29169,7 +29220,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "32951" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43653" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

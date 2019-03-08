@@ -21,9 +21,9 @@ class About extends React.Component {
                   </div>
             </section>
 
-            <section className="education">
+            <section id="education" className="education">
               <div className="education-title">
-                <p>Education</p>
+                <p>EDUCATION</p>
               </div>
               <div className="education-item1">
                   <h4>Becode</h4>
