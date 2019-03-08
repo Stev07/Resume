@@ -47,7 +47,7 @@ class Header extends React.Component {
           </Link>
           <Link
             activeClass="active"
-            to="works"
+            to="skills"
             spy={true}
             smooth={true}
             offset={0}

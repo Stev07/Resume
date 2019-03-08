@@ -17,7 +17,9 @@ class Resume extends React.Component {
                   <h4>COMPANY</h4>
                   <p>blablablablabla</p>
               </div>
+              <div className="separate" />
             </section>
+            
             <section className="skills">
               Skills
             </section>

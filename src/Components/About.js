@@ -33,7 +33,9 @@ class About extends React.Component {
                   <h4>Saint-Lambert Herstal</h4>
                   <p>blablablablabla</p>
               </div>
+              <div className="separate" />
             </section>
+            
         </div>
         
     );

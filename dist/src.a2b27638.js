@@ -28648,7 +28648,7 @@ function (_React$Component) {
         class: "resizeOnScroll"
       }, "RESUME"))), _react.default.createElement(_reactScroll.Link, {
         activeClass: "active",
-        to: "works",
+        to: "skills",
         spy: true,
         smooth: true,
         offset: 0,
@@ -28849,7 +28849,9 @@ function (_React$Component) {
         className: "education-item1"
       }, _react.default.createElement("h4", null, "Becode"), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
         className: "education-item2"
-      }, _react.default.createElement("h4", null, "Saint-Lambert Herstal"), _react.default.createElement("p", null, "blablablablabla"))));
+      }, _react.default.createElement("h4", null, "Saint-Lambert Herstal"), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
+        className: "separate"
+      })));
     }
   }]);
 
@@ -28920,7 +28922,9 @@ function (_React$Component) {
         className: "resume-item1"
       }, _react.default.createElement("h4", null, "COMPANY"), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
         className: "resume-item2"
-      }, _react.default.createElement("h4", null, "COMPANY"), _react.default.createElement("p", null, "blablablablabla"))), _react.default.createElement("section", {
+      }, _react.default.createElement("h4", null, "COMPANY"), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
+        className: "separate"
+      })), _react.default.createElement("section", {
         className: "skills"
       }, "Skills"));
     }
