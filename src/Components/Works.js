@@ -9,7 +9,7 @@ class Works extends React.Component {
         
         return (
             <div id="works">
-                
+                Works example
             </div>
             );
         }
