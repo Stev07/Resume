@@ -21,11 +21,9 @@ class App extends React.Component {
       ) {
         document.querySelector("nav").style.background = "rgba(0,0,0,0.4)";
         document.querySelector("header").style.height = "5vh";
-        document.querySelectorAll(".resizeOnScroll").style.fontSize="11px";
       } else {
         document.querySelector("nav").style.background = "transparent";
         document.querySelector("header").style.height = "12vh";
-        document.querySelectorAll(".resizeOnScroll").style.fontSize="15px";
       }
     }
 

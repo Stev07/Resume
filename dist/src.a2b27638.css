@@ -27,9 +27,6 @@ header nav {
   font-size: 15px;
   font-weight: bold;
 }
-header nav .active {
-  color: #46a4d7;
-}
 header nav li {
   margin: 0px 15px;
 }
@@ -39,6 +36,10 @@ header nav li a {
   transition: 0.4s;
 }
 header nav li a:hover {
+  color: #46a4d7;
+}
+
+.nav-active {
   color: #46a4d7;
 }* {
   margin: 0px;
@@ -214,13 +215,13 @@ header nav li a:hover {
   background: lightgrey;
   margin: 0 auto;
 }
-#resume .skills {
+#resume #skills {
   height: 50%;
   text-align: center;
 }#works {
   width: 100vw;
   height: 50vh;
-  background: darkblue;
+  background: #46a4d7;
 }#contact {
   width: 100vw;
   height: 100vh;

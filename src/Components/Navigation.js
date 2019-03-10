@@ -3,12 +3,60 @@ import "../scss/navigation.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 class Header extends React.Component {
+
   render() {
+
+    window.addEventListener("scroll", () => { 
+      const about = document.querySelector("#about");
+      const education = document.querySelector("#education");
+      const skills = document.querySelector("#skills");
+      const contact = document.querySelector("#contact");
+      const link = document.querySelectorAll(".nav-link");
+  
+      // console.log(document.documentElement.scrollTop)
+      // console.log(contact.offsetTop)
+      // console.log(window.scrollY)
+
+      if(window.scrollY < about.offsetTop){
+        link[1].style.color="white"
+        link[2].style.color="white"
+        link[3].style.color="white"
+        link[4].style.color="white"
+        link[0].style.color="#46a4d7"
+      }else if(window.scrollY >= (about.offsetTop) && window.scrollY < education.offsetTop){
+        link[0].style.color="white"
+        link[2].style.color="white"
+        link[3].style.color="white"
+        link[4].style.color="white"
+        link[1].style.color="#46a4d7"
+      }else if(window.scrollY >= (education.offsetTop) && window.scrollY < skills.offsetTop){
+        link[0].style.color="white"
+        link[1].style.color="white"
+        link[3].style.color="white"
+        link[4].style.color="white"
+        link[2].style.color="#46a4d7"
+      }else if(window.scrollY >= (skills.offsetTop) && window.scrollY < contact.offsetTop){
+        link[0].style.color="white"
+        link[1].style.color="white"
+        link[2].style.color="white"
+        link[4].style.color="white"
+        link[3].style.color="#46a4d7"
+      }else if(window.scrollY <= (contact.offsetTop)){
+        link[0].style.color="white"
+        link[1].style.color="white"
+        link[2].style.color="white"
+        link[3].style.color="white"
+        link[4].style.color="#46a4d7"
+      }
+  
+    
+  });
+
     return (
       <header>
         <nav>
           <Link
-            activeClass="active"
+            activeClass="nav-active"
             to="hello"
             spy={true}
             smooth={true}
@@ -16,7 +64,7 @@ class Header extends React.Component {
             duration={500}
           >
             <li>
-              <a a href="#" class="resizeOnScroll">
+              <a className="nav-link nav-active" a href="#">
                 HELLO
               </a>
             </li>
@@ -30,7 +78,9 @@ class Header extends React.Component {
             duration={500}
           >
             <li>
-              <a href="#" class="resizeOnScroll">ABOUT</a>
+              <a className="nav-link" href="#">
+                ABOUT
+              </a>
             </li>
           </Link>
           <Link
@@ -42,7 +92,9 @@ class Header extends React.Component {
             duration={700}
           >
             <li>
-              <a href="#" class="resizeOnScroll">RESUME</a>
+              <a  className="nav-link" href="#">
+                RESUME
+              </a>
             </li>
           </Link>
           <Link
@@ -54,7 +106,9 @@ class Header extends React.Component {
             duration={850}
           >
             <li>
-              <a href="#" class="resizeOnScroll">WORKS</a>
+              <a className="nav-link" href="#">
+                WORKS
+              </a>
             </li>
           </Link>
           <Link
@@ -66,7 +120,9 @@ class Header extends React.Component {
             duration={1000}
           >
             <li>
-              <a href="#" className="resizeOnScroll">CONTACT</a>
+              <a className="nav-link" href="#">
+                CONTACT
+              </a>
             </li>
           </Link>
         </nav>

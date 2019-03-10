@@ -20,7 +20,7 @@ class Resume extends React.Component {
               <div className="separate" />
             </section>
             
-            <section className="skills">
+            <section id="skills">
               Skills
             </section>
         </div>

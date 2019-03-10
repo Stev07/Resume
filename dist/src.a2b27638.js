@@ -28615,17 +28615,58 @@ function (_React$Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
+      window.addEventListener("scroll", function () {
+        var about = document.querySelector("#about");
+        var education = document.querySelector("#education");
+        var skills = document.querySelector("#skills");
+        var contact = document.querySelector("#contact");
+        var link = document.querySelectorAll(".nav-link"); // console.log(document.documentElement.scrollTop)
+        // console.log(contact.offsetTop)
+        // console.log(window.scrollY)
+
+        if (window.scrollY < about.offsetTop) {
+          link[1].style.color = "white";
+          link[2].style.color = "white";
+          link[3].style.color = "white";
+          link[4].style.color = "white";
+          link[0].style.color = "#46a4d7";
+        } else if (window.scrollY >= about.offsetTop && window.scrollY < education.offsetTop) {
+          link[0].style.color = "white";
+          link[2].style.color = "white";
+          link[3].style.color = "white";
+          link[4].style.color = "white";
+          link[1].style.color = "#46a4d7";
+        } else if (window.scrollY >= education.offsetTop && window.scrollY < skills.offsetTop) {
+          link[0].style.color = "white";
+          link[1].style.color = "white";
+          link[3].style.color = "white";
+          link[4].style.color = "white";
+          link[2].style.color = "#46a4d7";
+        } else if (window.scrollY >= skills.offsetTop && window.scrollY < contact.offsetTop) {
+          link[0].style.color = "white";
+          link[1].style.color = "white";
+          link[2].style.color = "white";
+          link[4].style.color = "white";
+          link[3].style.color = "#46a4d7";
+        } else if (window.scrollY <= contact.offsetTop) {
+          link[0].style.color = "white";
+          link[1].style.color = "white";
+          link[2].style.color = "white";
+          link[3].style.color = "white";
+          link[4].style.color = "#46a4d7";
+        }
+      });
       return _react.default.createElement("header", null, _react.default.createElement("nav", null, _react.default.createElement(_reactScroll.Link, {
-        activeClass: "active",
+        activeClass: "nav-active",
         to: "hello",
         spy: true,
         smooth: true,
         offset: 0,
         duration: 500
       }, _react.default.createElement("li", null, _react.default.createElement("a", {
+        className: "nav-link nav-active",
         a: true,
-        href: "#",
-        class: "resizeOnScroll"
+        href: "#"
       }, "HELLO"))), _react.default.createElement(_reactScroll.Link, {
         activeClass: "active",
         to: "about",
@@ -28634,8 +28675,8 @@ function (_React$Component) {
         offset: 0,
         duration: 500
       }, _react.default.createElement("li", null, _react.default.createElement("a", {
-        href: "#",
-        class: "resizeOnScroll"
+        className: "nav-link",
+        href: "#"
       }, "ABOUT"))), _react.default.createElement(_reactScroll.Link, {
         activeClass: "active",
         to: "education",
@@ -28644,8 +28685,8 @@ function (_React$Component) {
         offset: 0,
         duration: 700
       }, _react.default.createElement("li", null, _react.default.createElement("a", {
-        href: "#",
-        class: "resizeOnScroll"
+        className: "nav-link",
+        href: "#"
       }, "RESUME"))), _react.default.createElement(_reactScroll.Link, {
         activeClass: "active",
         to: "skills",
@@ -28654,8 +28695,8 @@ function (_React$Component) {
         offset: 0,
         duration: 850
       }, _react.default.createElement("li", null, _react.default.createElement("a", {
-        href: "#",
-        class: "resizeOnScroll"
+        className: "nav-link",
+        href: "#"
       }, "WORKS"))), _react.default.createElement(_reactScroll.Link, {
         activeClass: "active",
         to: "contact",
@@ -28664,8 +28705,8 @@ function (_React$Component) {
         offset: 0,
         duration: 1000
       }, _react.default.createElement("li", null, _react.default.createElement("a", {
-        href: "#",
-        className: "resizeOnScroll"
+        className: "nav-link",
+        href: "#"
       }, "CONTACT")))));
     }
   }]);
@@ -28925,7 +28966,7 @@ function (_React$Component) {
       }, _react.default.createElement("h4", null, "COMPANY"), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
         className: "separate"
       })), _react.default.createElement("section", {
-        className: "skills"
+        id: "skills"
       }, "Skills"));
     }
   }]);
@@ -28988,7 +29029,7 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("div", {
         id: "works"
-      }, "works");
+      });
     }
   }]);
 
@@ -29162,11 +29203,9 @@ function (_React$Component) {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
           document.querySelector("nav").style.background = "rgba(0,0,0,0.4)";
           document.querySelector("header").style.height = "5vh";
-          document.querySelectorAll(".resizeOnScroll").style.fontSize = "11px";
         } else {
           document.querySelector("nav").style.background = "transparent";
           document.querySelector("header").style.height = "12vh";
-          document.querySelectorAll(".resizeOnScroll").style.fontSize = "15px";
         }
       };
 
@@ -29224,7 +29263,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43653" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36369" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
