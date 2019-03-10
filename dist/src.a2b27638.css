@@ -37,10 +37,6 @@ header nav li a {
 }
 header nav li a:hover {
   color: #46a4d7;
-}
-
-.nav-active {
-  color: #46a4d7;
 }* {
   margin: 0px;
   padding: 0px;
@@ -240,17 +236,14 @@ header nav li a:hover {
 #resume #skills .skills-box .skills-html {
   grid-column: 2;
   grid-row: 1;
-  opacity: 0;
 }
 #resume #skills .skills-box .skills-css {
   grid-column: 3;
   grid-row: 1;
-  opacity: 0;
 }
 #resume #skills .skills-box .skills-js {
   grid-column: 4;
   grid-row: 1;
-  opacity: 0;
 }
 #resume #skills .skills-box .skills-react {
   grid-column: 5;
