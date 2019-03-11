@@ -5,7 +5,6 @@ class Resume extends React.Component {
   render() {
     window.addEventListener("scroll", () => {
       if (window.scrollY > document.querySelector("#skills").offsetTop - 100) {
-        console.log("heybro");
         document.querySelector(".skills-box").style.opacity = "1";
       }
     });
@@ -14,15 +13,17 @@ class Resume extends React.Component {
       <div id="resume">
         <section id="resume" className="resume">
           <div className="resume-title">
-            <p>WORK</p>
+            <p>WORKS</p>
           </div>
           <div className="resume-item1">
-            <h4>COMPANY</h4>
+            <h3>Junior Web Developer</h3>
+            <h5><em>Becode | Oct 2018 - Mai 2019</em></h5>
             <p>blablablablabla</p>
           </div>
           <div className="resume-item2">
-            <h4>COMPANY</h4>
-            <p>blablablablabla</p>
+            <h3>Manager-Assistant</h3>
+            <h5><em>Lidl | Jan 2015 - Mar 2018</em></h5>
+            <p>blablablabla</p>
           </div>
           <div className="separate" />
         </section>

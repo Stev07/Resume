@@ -15,7 +15,7 @@ class Header extends React.Component {
   
       // console.log(document.documentElement.scrollTop)
       // console.log(contact.offsetTop)
-      // console.log(window.scrollY)
+      console.log(window.scrollY)
 
       if(window.scrollY < about.offsetTop){
         link[1].style.color="white"

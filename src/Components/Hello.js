@@ -7,7 +7,7 @@ class Hello extends React.Component {
     return (
       <div className="content">
         <div className="infoBox">
-          <div>
+          <div className="">
             <h1>
               <span className="developer">I am</span> Steve Dossin
             </h1>

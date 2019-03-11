@@ -1,83 +1,87 @@
-#about{
-    width: 100vw;
-    height: 100vh;
+#about {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
 
-    .about{
-      height: 50vh;
-      width: 100%;
-      background: #2b2b2b;
-      display:grid;
-      grid-template-columns:0.5fr 1fr 2fr 0.5fr;
-      grid-template-rows: 45% 45% 10%;
-    }
-  
-    .about-img{
-      width: 100%;
-      height: 100%;
-      grid-column: 2;
-      grid-row:1/3;
-      background:url(../img/avatarsteve.png) no-repeat center left;
-  
-    }
-  
-    .about-me{
-      width: 100%;
-      height: 100%;
-      grid-column: 3;
-      grid-row:1;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-
-      h4{color:white;}
-      p{color:#7a7a7a; line-height: 30px;}
-    }
-  
-    .about-details{
-      width: 100%;
-      height: 100%;
-      grid-column: 3;
-      grid-row:2;
-
-      h4{color:white;}
-      p{color:#7a7a7a; line-height: 30px;}
-      
-    }
-  
-  
-    .education{
-      height: 50vh;
-      display:grid;
-      grid-template-columns:0.5fr 1fr 2fr 0.5fr;
-      grid-template-rows: 45% 45% 10%;
-      align-items: center;
-  
-      .education-title{
-        grid-column: 2;
-        grid-row:1;
-
-      }
-  
-      .education-item1{
-        grid-column:3;
-        grid-row:1;
-      }
-  
-      .education-item2{
-        grid-column:3;
-        grid-row:2;
-      }
-      .separate {
-        grid-row:3;
-        grid-column:2/4;
-        width: 100%;
-        height: 1px;
-        background: lightgrey;
-        margin: 0 auto;
-            }
-    }
-
-
+  .about {
+    height: 50vh;
+    width: 100%;
+    background: #2b2b2b;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
+    grid-template-rows: 45% 45% 10%;
   }
 
-  
+  .about-img {
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1/3;
+    background: url(../img/avatarsteve.png) no-repeat center left;
+  }
+
+  .about-me {
+    width: 100%;
+    height: 100%;
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    h4 {
+      color: white;
+    }
+    p {
+      color: #7a7a7a;
+      line-height: 30px;
+    }
+  }
+
+  .about-details {
+    width: 100%;
+    height: 100%;
+    grid-column: 3;
+    grid-row: 2;
+
+    h4 {
+      color: white;
+    }
+    p {
+      color: #7a7a7a;
+      line-height: 30px;
+    }
+  }
+
+  .education {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
+    grid-template-rows: 45% 45% 10%;
+    align-items: center;
+    line-height: 30px;
+
+    .education-title {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .education-item1 {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    .education-item2 {
+      grid-column: 3;
+      grid-row: 2;
+    }
+    .separate {
+      grid-row: 3;
+      grid-column: 2/4;
+      width: 100%;
+      height: 1px;
+      background: lightgrey;
+      margin: 0 auto;
+    }
+  }
+}

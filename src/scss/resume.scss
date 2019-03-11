@@ -2,6 +2,7 @@
   width: 100vw;
   height: 100vh;
   background: white;
+  font-family: 'Montserrat', sans-serif;
 
   .resume {
     height: 50%;
@@ -9,6 +10,8 @@
     grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
     grid-template-rows: 45% 45% 10%;
     align-items: center;
+    align-items: center;
+    line-height: 30px;
 
     .resume-title {
       grid-column: 2;

@@ -10,7 +10,7 @@ class Contact extends React.Component {
         <div className="more">
           more
           <footer>
-            <p>logos</p>
+            <p>Feel free to contact me ......</p>
             <div className="footer-info">
               <Link
                 className="gotop"

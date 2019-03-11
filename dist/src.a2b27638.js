@@ -28622,7 +28622,8 @@ function (_React$Component) {
         var contact = document.querySelector("#contact");
         var link = document.querySelectorAll(".nav-link"); // console.log(document.documentElement.scrollTop)
         // console.log(contact.offsetTop)
-        // console.log(window.scrollY)
+
+        console.log(window.scrollY);
 
         if (window.scrollY < about.offsetTop) {
           link[1].style.color = "white";
@@ -28773,7 +28774,9 @@ function (_React$Component) {
         className: "content"
       }, _react.default.createElement("div", {
         className: "infoBox"
-      }, _react.default.createElement("div", null, _react.default.createElement("h1", null, _react.default.createElement("span", {
+      }, _react.default.createElement("div", {
+        className: ""
+      }, _react.default.createElement("h1", null, _react.default.createElement("span", {
         className: "developer"
       }, "I am"), " Steve Dossin")), _react.default.createElement("div", {
         className: ""
@@ -28888,9 +28891,9 @@ function (_React$Component) {
         className: "education-title"
       }, _react.default.createElement("p", null, "EDUCATION")), _react.default.createElement("div", {
         className: "education-item1"
-      }, _react.default.createElement("h4", null, "Becode"), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
+      }, _react.default.createElement("h3", null, "Certificate relating to basic management knowledge"), _react.default.createElement("h5", null, _react.default.createElement("em", null, "Saint-Lambert Herstal | 2012 - 2013")), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
         className: "education-item2"
-      }, _react.default.createElement("h4", null, "Saint-Lambert Herstal"), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
+      }, _react.default.createElement("h3", null, "Accounting technician"), _react.default.createElement("h5", null, _react.default.createElement("em", null, "Saint-Lambert Herstal | 2009 - 2013")), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
         className: "separate"
       })));
     }
@@ -28954,7 +28957,6 @@ function (_React$Component) {
     value: function render() {
       window.addEventListener("scroll", function () {
         if (window.scrollY > document.querySelector("#skills").offsetTop - 100) {
-          console.log("heybro");
           document.querySelector(".skills-box").style.opacity = "1";
         }
       });
@@ -28965,11 +28967,11 @@ function (_React$Component) {
         className: "resume"
       }, _react.default.createElement("div", {
         className: "resume-title"
-      }, _react.default.createElement("p", null, "WORK")), _react.default.createElement("div", {
+      }, _react.default.createElement("p", null, "WORKS")), _react.default.createElement("div", {
         className: "resume-item1"
-      }, _react.default.createElement("h4", null, "COMPANY"), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
+      }, _react.default.createElement("h3", null, "Junior Web Developer"), _react.default.createElement("h5", null, _react.default.createElement("em", null, "Becode | Oct 2018 - Mai 2019")), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
         className: "resume-item2"
-      }, _react.default.createElement("h4", null, "COMPANY"), _react.default.createElement("p", null, "blablablablabla")), _react.default.createElement("div", {
+      }, _react.default.createElement("h3", null, "Manager-Assistant"), _react.default.createElement("h5", null, _react.default.createElement("em", null, "Lidl | Jan 2015 - Mar 2018")), _react.default.createElement("p", null, "blablablabla")), _react.default.createElement("div", {
         className: "separate"
       })), _react.default.createElement("section", {
         id: "skills"
@@ -29122,7 +29124,9 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/Components/Works.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/img/projects/pomodoro.png":[function(require,module,exports) {
+module.exports = "/pomodoro.2394abd0.png";
+},{}],"src/Components/Works.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29133,6 +29137,8 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 require("../scss/works.scss");
+
+var _pomodoro = _interopRequireDefault(require("../img/projects/pomodoro.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29170,7 +29176,23 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("div", {
         id: "works"
-      }, "Works example");
+      }, _react.default.createElement("div", {
+        className: "works-box"
+      }, _react.default.createElement("div", {
+        className: "works-item"
+      }, _react.default.createElement("a", {
+        target: "_blank",
+        href: "https://stev07.github.io/React_Pomodoro/"
+      }, _react.default.createElement("img", {
+        src: _pomodoro.default,
+        className: "pomodoro"
+      }))), _react.default.createElement("div", {
+        className: "works-item"
+      }, "Project2"), _react.default.createElement("div", {
+        className: "works-item"
+      }, "Project3"), _react.default.createElement("div", {
+        className: "works-item"
+      }, "Project4")));
     }
   }]);
 
@@ -29179,7 +29201,7 @@ function (_React$Component) {
 
 var _default = Works;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../scss/works.scss":"src/scss/works.scss"}],"src/scss/contact.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../scss/works.scss":"src/scss/works.scss","../img/projects/pomodoro.png":"src/img/projects/pomodoro.png"}],"src/scss/contact.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -29238,7 +29260,7 @@ function (_React$Component) {
         className: "form"
       }, "Formulaire"), _react.default.createElement("div", {
         className: "more"
-      }, "more", _react.default.createElement("footer", null, _react.default.createElement("p", null, "logos"), _react.default.createElement("div", {
+      }, "more", _react.default.createElement("footer", null, _react.default.createElement("p", null, "Feel free to contact me ......"), _react.default.createElement("div", {
         className: "footer-info"
       }, _react.default.createElement(_reactScroll.Link, {
         className: "gotop",
@@ -29404,7 +29426,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38569" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46619" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
