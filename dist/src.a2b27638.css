@@ -376,7 +376,7 @@ header nav li a:hover {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
   grid-template-rows: 1fr 1fr 1fr 0.5fr;
-  padding-top: 50px;
+  padding-top: 45px;
 }
 .form form .form-name, .form form .form-email, .form form .form-subject, .form form .form-message, .form form .form-submit, .form form textarea {
   display: flex;
@@ -397,12 +397,12 @@ header nav li a:hover {
 }
 .form form .form-message {
   grid-column: 3;
-  grid-row: 1/3;
+  grid-row: 2;
   align-self: center;
 }
 .form form .form-message textarea {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .form form .form-submit {
   grid-column: 2/4;
