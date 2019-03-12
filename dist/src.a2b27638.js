@@ -27946,11 +27946,17 @@ function (_React$Component) {
         type: "text",
         name: "lastname"
       }), _react.default.createElement("input", {
+        type: "email",
+        name: "_replyto"
+      }), _react.default.createElement("input", {
         type: "text",
         name: "subject"
       }), _react.default.createElement("textarea", {
         type: "text",
         name: "subject"
+      }), _react.default.createElement("input", {
+        type: "submit",
+        value: "Send"
       })));
     }
   }]);
