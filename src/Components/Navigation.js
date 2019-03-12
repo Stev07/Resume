@@ -12,39 +12,23 @@ class Header extends React.Component {
       const skills = document.querySelector("#skills");
       const contact = document.querySelector("#contact");
       const link = document.querySelectorAll(".nav-link");
-  
-      // console.log(document.documentElement.scrollTop)
-      // console.log(contact.offsetTop)
-      // console.log(window.scrollY)
 
       if(window.scrollY < about.offsetTop){
         link[1].style.color="white"
-        link[2].style.color="white"
-        link[3].style.color="white"
-        link[4].style.color="white"
         link[0].style.color="#46a4d7"
       }else if(window.scrollY >= (about.offsetTop) && window.scrollY < education.offsetTop){
         link[0].style.color="white"
         link[2].style.color="white"
-        link[3].style.color="white"
-        link[4].style.color="white"
         link[1].style.color="#46a4d7"
       }else if(window.scrollY >= (education.offsetTop) && window.scrollY < skills.offsetTop){
-        link[0].style.color="white"
         link[1].style.color="white"
         link[3].style.color="white"
-        link[4].style.color="white"
         link[2].style.color="#46a4d7"
       }else if(window.scrollY >= (skills.offsetTop) && window.scrollY < contact.offsetTop){
-        link[0].style.color="white"
-        link[1].style.color="white"
         link[2].style.color="white"
         link[4].style.color="white"
         link[3].style.color="#46a4d7"
       }else if(window.scrollY <= (contact.offsetTop)){
-        link[0].style.color="white"
-        link[1].style.color="white"
-        link[2].style.color="white"
         link[3].style.color="white"
         link[4].style.color="#46a4d7"
       }

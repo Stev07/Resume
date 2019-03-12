@@ -7,11 +7,13 @@ class Contact extends React.Component {
   render() {
     return (
       <div id="contact">
-        
-          <Form />
+        <div className="contactme">
+          <p>Feel free to contact me! I'm avaible for any contract.</p>
+        </div>
+      
+        <Form />
         
           <footer>
-            <p>Feel free to contact me! I'm avaible for any contract.</p>
             <div className="citation"><p>"As far as the future is concerned, it is not a question of predicting it, but of making it possible."</p></div>
             <div className="footer-info">
               <Link

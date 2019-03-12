@@ -27285,38 +27285,24 @@ function (_React$Component) {
         var education = document.querySelector("#education");
         var skills = document.querySelector("#skills");
         var contact = document.querySelector("#contact");
-        var link = document.querySelectorAll(".nav-link"); // console.log(document.documentElement.scrollTop)
-        // console.log(contact.offsetTop)
-        // console.log(window.scrollY)
+        var link = document.querySelectorAll(".nav-link");
 
         if (window.scrollY < about.offsetTop) {
           link[1].style.color = "white";
-          link[2].style.color = "white";
-          link[3].style.color = "white";
-          link[4].style.color = "white";
           link[0].style.color = "#46a4d7";
         } else if (window.scrollY >= about.offsetTop && window.scrollY < education.offsetTop) {
           link[0].style.color = "white";
           link[2].style.color = "white";
-          link[3].style.color = "white";
-          link[4].style.color = "white";
           link[1].style.color = "#46a4d7";
         } else if (window.scrollY >= education.offsetTop && window.scrollY < skills.offsetTop) {
-          link[0].style.color = "white";
           link[1].style.color = "white";
           link[3].style.color = "white";
-          link[4].style.color = "white";
           link[2].style.color = "#46a4d7";
         } else if (window.scrollY >= skills.offsetTop && window.scrollY < contact.offsetTop) {
-          link[0].style.color = "white";
-          link[1].style.color = "white";
           link[2].style.color = "white";
           link[4].style.color = "white";
           link[3].style.color = "#46a4d7";
         } else if (window.scrollY <= contact.offsetTop) {
-          link[0].style.color = "white";
-          link[1].style.color = "white";
-          link[2].style.color = "white";
           link[3].style.color = "white";
           link[4].style.color = "#46a4d7";
         }
@@ -27939,25 +27925,35 @@ function (_React$Component) {
       }, _react.default.createElement("form", {
         action: "https://formspree.io/steve.dossin@gmail.com",
         method: "POST"
+      }, _react.default.createElement("div", {
+        className: "form-name"
       }, _react.default.createElement("input", {
         type: "text",
-        name: "firstname"
-      }), _react.default.createElement("input", {
-        type: "text",
-        name: "lastname"
-      }), _react.default.createElement("input", {
+        name: "name",
+        placeholder: "Your name"
+      })), _react.default.createElement("div", {
+        className: "form-email"
+      }, _react.default.createElement("input", {
         type: "email",
-        name: "_replyto"
-      }), _react.default.createElement("input", {
+        name: "_replyto",
+        placeholder: "Email"
+      })), _react.default.createElement("div", {
+        className: "form-subject"
+      }, _react.default.createElement("input", {
         type: "text",
-        name: "subject"
-      }), _react.default.createElement("textarea", {
-        type: "text",
-        name: "text"
-      }), _react.default.createElement("input", {
+        name: "subject",
+        placeholder: "Subject"
+      })), _react.default.createElement("div", {
+        className: "form-message"
+      }, _react.default.createElement("textarea", {
+        name: "message",
+        placeholder: "Your message"
+      })), _react.default.createElement("div", {
+        className: "form-submit"
+      }, _react.default.createElement("input", {
         type: "submit",
         value: "Send"
-      })));
+      }))));
     }
   }]);
 
@@ -28018,7 +28014,9 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("div", {
         id: "contact"
-      }, _react.default.createElement(_Form.default, null), _react.default.createElement("footer", null, _react.default.createElement("p", null, "Feel free to contact me! I'm avaible for any contract."), _react.default.createElement("div", {
+      }, _react.default.createElement("div", {
+        className: "contactme"
+      }, _react.default.createElement("p", null, "Feel free to contact me! I'm avaible for any contract.")), _react.default.createElement(_Form.default, null), _react.default.createElement("footer", null, _react.default.createElement("div", {
         className: "citation"
       }, _react.default.createElement("p", null, "\"As far as the future is concerned, it is not a question of predicting it, but of making it possible.\"")), _react.default.createElement("div", {
         className: "footer-info"
@@ -28186,7 +28184,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43631" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44049" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

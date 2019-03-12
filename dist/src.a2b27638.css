@@ -312,20 +312,19 @@ header nav li a:hover {
   height: 100vh;
   background: #191919;
 }
-#contact .form {
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#contact .contactme {
+  color: white;
+  text-align: center;
 }
 #contact footer {
   height: 50%;
   position: relative;
+  text-align: center;
 }
 #contact footer .citation {
   color: white;
-  text-align: center;
   font-style: italic;
+  margin-bottom: 50px;
 }
 #contact footer .footer-info {
   height: 25vh;
@@ -368,4 +367,48 @@ header nav li a:hover {
   text-align: center;
   color: #525252;
   font-family: sans-serif;
+}.form {
+  width: 100%;
+  height: 50%;
+}
+.form form {
+  height: 60%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr;
+  padding-top: 50px;
+}
+.form form .form-name, .form form .form-email, .form form .form-subject, .form form .form-message, .form form .form-submit, .form form textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form form .form-name {
+  grid-column: 2;
+  grid-row: 1;
+}
+.form form .form-email {
+  grid-column: 2;
+  grid-row: 2;
+}
+.form form .form-subject {
+  grid-column: 2;
+  grid-row: 3;
+}
+.form form .form-message {
+  grid-column: 3;
+  grid-row: 1/3;
+  align-self: center;
+}
+.form form .form-message textarea {
+  width: 100%;
+  height: 100%;
+}
+.form form .form-submit {
+  grid-column: 2/4;
+  grid-row: 4;
+}
+.form form .form-submit input {
+  margin-top: 50px;
+  width: 200px;
 }
