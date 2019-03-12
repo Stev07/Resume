@@ -311,6 +311,7 @@ header nav li a:hover {
   width: 100vw;
   height: 100vh;
   background: #191919;
+  font-family: "Montserrat", sans-serif;
 }
 #contact .contactme {
   color: white;
@@ -325,6 +326,7 @@ header nav li a:hover {
 #contact footer .citation {
   color: white;
   font-style: italic;
+  font-family: sans-serif !important;
 }
 #contact footer .footer-info {
   height: 30vh;
