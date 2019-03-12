@@ -6,7 +6,7 @@ class Form extends React.Component {
     return (
       <div className="form">
         <form action="https://formspree.io/steve.dossin@gmail.com" method="POST">
-            <div className="form-name"><input type="text" name="name" placeholder="Your name" /></div>
+            <div className="form-name"><input type="text" name="name" placeholder="Name" /></div>
             <div className="form-email"><input type="email" name="_replyto" placeholder="Email"/></div>
             <div className="form-subject"><input type="text" name="subject" placeholder="Subject" /></div>
             <div className="form-message"><textarea name="message" placeholder="Your message" /></div>

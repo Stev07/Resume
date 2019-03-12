@@ -8,7 +8,7 @@ class Contact extends React.Component {
     return (
       <div id="contact">
         <div className="contactme">
-          <p>Feel free to contact me! I'm avaible for any contract.</p>
+          <p>Feel free to contact me! I'm avaible for any contract/project.</p>
         </div>
       
         <Form />

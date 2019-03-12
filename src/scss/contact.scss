@@ -1,65 +1,72 @@
-#contact{
-    width: 100vw;
-    height: 100vh;
-    background: #191919;
+#contact {
+  width: 100vw;
+  height: 100vh;
+  background: #191919;
 
-    .contactme{
-      color:white;
-      text-align: center;
+  .contactme {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  footer {
+    height: 50%;
+    position: relative;
+    text-align: center;
+
+    .citation {
+      color: white;
+      font-style: italic;
     }
-    
-    footer{
-      height: 50%;
-      position:relative;
-      text-align: center;
 
-      .citation{
-        color:white;
-        font-style:italic;
-        margin-bottom: 50px;
+    .footer-info {
+      height: 30vh;
+      width: 100%;
+      background: #0f0f0f;
+      position: absolute;
+      bottom: 0;
+
+      .gotop {
+        width: 100%;
+        color: white;
+        font-size: 8vh;
+        position: absolute;
+        bottom: 26vh;
+        display: flex;
+        justify-content: center;
+
+        i {
+          cursor: pointer;
+        }
       }
 
-      .footer-info{
-        height: 25vh;
-        width: 100%;
-        background: #0f0f0f;
-        position:absolute;
-        bottom:0;
+      .social {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        padding-top: 25px;
+        padding-left: 10px;
 
-        .gotop{
-          width: 100%;
-          color:white;
-          font-size:8vh;
-          position:absolute;
-          bottom:21vh;
-          display: flex;
-          justify-content: center;
-
-          i{
-            cursor:pointer;
+        .social-icon {
+          padding: 20px 0px;
+          margin: 0 70px;
+          transition: 0.5s;
+          &:hover {
+            color: #46a4d7;
           }
         }
 
-        .social {
-          display: flex;
-          justify-content: center;
-          font-size: 30px;
-          padding-top: 25px;
-          padding-left:10px;
-    
-          .social-icon {
-            padding: 50px 0px;
-            margin: 0 70px;
-            transition: 0.5s;
-            &:hover {
-              color: #46a4d7;
-            }
-          }
-    
-          a {color: white}
+        a {
+          color: white;
         }
+      }
 
-        .made{text-align: center;color:#525252;font-family:sans-serif}
+      .made {
+        text-align: center;
+        color: #525252;
+        font-family: sans-serif;
+        padding-top: 25px;
       }
     }
   }
+}
