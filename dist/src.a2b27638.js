@@ -27937,7 +27937,7 @@ function (_React$Component) {
       return _react.default.createElement("div", {
         className: "form"
       }, _react.default.createElement("form", {
-        action: "https://formspree.io/your@email.com",
+        action: "https://formspree.io/steve.dossin@gmail.com",
         method: "POST"
       }, _react.default.createElement("input", {
         type: "text",
