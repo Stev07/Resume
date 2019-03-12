@@ -7,10 +7,9 @@ class Contact extends React.Component {
     return (
       <div id="contact">
         <div className="form">Formulaire</div>
-        <div className="more">
-          more
           <footer>
-            <p>Feel free to contact me ......</p>
+            <p>Feel free to contact me! I'm avaible for any contract.</p>
+            <div className="citation"><p>"As far as the future is concerned, it is not a question of predicting it, but of making it possible."</p></div>
             <div className="footer-info">
               <Link
                 className="gotop"
@@ -43,7 +42,6 @@ class Contact extends React.Component {
               </p>
             </div>
           </footer>
-        </div>
       </div>
     );
   }

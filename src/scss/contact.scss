@@ -5,12 +5,19 @@
 
     .form{
       height: 50%;
+      display: flex;
+      justify-content: center;align-items: center;
     }
     
-    .more{
+    footer{
       height: 50%;
       position:relative;
 
+      .citation{
+        color:white;
+        text-align: center;
+        font-style:italic; 
+      }
       .footer-info{
         height: 25vh;
         width: 100%;
