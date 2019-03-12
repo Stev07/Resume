@@ -10,7 +10,7 @@ class Form extends React.Component {
             <input type="text" name="lastname" />
             <input type="email" name="_replyto" />
             <input type="text" name="subject" />
-            <textarea type="text" name="subject" />
+            <textarea type="text" name="text" />
             <input type="submit" value="Send" />
         </form>
       </div>

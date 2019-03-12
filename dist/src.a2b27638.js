@@ -27953,7 +27953,7 @@ function (_React$Component) {
         name: "subject"
       }), _react.default.createElement("textarea", {
         type: "text",
-        name: "subject"
+        name: "text"
       }), _react.default.createElement("input", {
         type: "submit",
         value: "Send"
