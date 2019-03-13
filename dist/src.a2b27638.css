@@ -28,7 +28,7 @@ header nav {
   font-size: 15px;
   font-weight: bold;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   header nav {
     font-size: 12px;
     justify-content: space-evenly;
@@ -37,7 +37,7 @@ header nav {
 header nav li {
   margin: 0px 15px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   header nav li {
     margin: 0px 5px;
   }
@@ -64,7 +64,7 @@ header nav li a:hover {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .content {
     position: relative;
   }
@@ -78,7 +78,7 @@ header nav li a:hover {
   font-family: "Russo One", sans-serif;
   font-weight: normal;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .content .infoBox div > h1 {
     margin-top: 30px;
     font-size: 35px;
@@ -91,7 +91,7 @@ header nav li a:hover {
   font-family: "Russo One", sans-serif;
   font-weight: normal;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .content .infoBox div > h2 {
     font-size: 20px;
   }
@@ -104,7 +104,7 @@ header nav li a:hover {
   font-size: 18px;
   line-height: 35px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .content .infoBox div > p {
     font-size: 15px;
     line-height: 25px;
@@ -118,7 +118,7 @@ header nav li a:hover {
   background: white;
   margin: 0 auto;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .content .infoBox .separate {
     width: 80%;
     margin-top: 40px;
@@ -145,7 +145,7 @@ header nav li a:hover {
 .content .infoBox .social a {
   color: white;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .content .down {
     font-size: 15px;
     line-height: 25px;
@@ -174,7 +174,7 @@ header nav li a:hover {
   grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
   grid-template-rows: 45% 45% 10%;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #about .about {
     grid-template-columns: 1fr;
     grid-template-rows: 60% 40%;
@@ -187,7 +187,7 @@ header nav li a:hover {
   grid-row: 1/3;
   background: url(avatarsteve.4c88650d.png) no-repeat center left;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #about .about-img {
     display: none;
   }
@@ -202,7 +202,7 @@ header nav li a:hover {
   align-items: center;
   padding-top: 25px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #about .about-me {
     display: block;
     padding-top: 40px;
@@ -216,7 +216,7 @@ header nav li a:hover {
   color: #7a7a7a;
   line-height: 30px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #about .about-me p {
     line-height: 22px;
   }
@@ -227,7 +227,7 @@ header nav li a:hover {
   grid-column: 3;
   grid-row: 2;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #about .about-details {
     text-align: center;
   }
@@ -247,7 +247,7 @@ header nav li a:hover {
   align-items: center;
   line-height: 30px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #about .education {
     display: flex;
     flex-wrap: wrap;
@@ -258,7 +258,7 @@ header nav li a:hover {
   grid-column: 2;
   grid-row: 1;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #about .education .education-title {
     grid-row: 1;
   }
@@ -267,18 +267,18 @@ header nav li a:hover {
   grid-column: 3;
   grid-row: 1;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #about .education .education-item1 {
     padding-top: 50px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #about .education .education-item1 h3 {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #about .education .education-item1 h5 {
     padding-bottom: 10px;
   }
@@ -306,7 +306,6 @@ header nav li a:hover {
   grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
   grid-template-rows: 45% 45% 10%;
   align-items: center;
-  align-items: center;
   line-height: 30px;
 }
 #resume .resume .resume-title {
@@ -332,6 +331,11 @@ header nav li a:hover {
 #resume #skills {
   height: 50%;
   text-align: center;
+}
+@media screen and (max-width: 576px) {
+  #resume #skills {
+    height: 100vh;
+  }
 }
 #resume #skills h4 {
   padding-top: 5vh;
@@ -395,7 +399,7 @@ header nav li a:hover {
   height: 50vh;
   background: #46a4d7;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #works {
     height: 100vh;
   }
@@ -407,18 +411,18 @@ header nav li a:hover {
   justify-content: space-evenly;
   align-items: center;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #works .works-box {
     flex-wrap: wrap;
   }
 }
 #works .works-box .works-item {
-  height: 65%;
+  height: 55%;
   width: 50%;
   margin: 0px 20px;
   transition: transform 0.2s;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #works .works-box .works-item {
     margin: 0;
     width: 60%;
@@ -456,7 +460,7 @@ header nav li a:hover {
   font-style: italic;
   font-family: sans-serif !important;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #contact footer .citation {
     font-size: 12px;
   }
@@ -495,7 +499,7 @@ header nav li a:hover {
 #contact footer .footer-info .social .social-icon:hover {
   color: #46a4d7;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   #contact footer .footer-info .social .social-icon {
     margin: 0 40px;
   }
@@ -519,7 +523,7 @@ header nav li a:hover {
   grid-template-rows: 1fr 1fr 1fr 0.5fr;
   padding-top: 45px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .form form {
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
@@ -553,7 +557,7 @@ header nav li a:hover {
   grid-row: 1/4;
   align-self: center;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .form form .form-message {
     grid-column: 2;
     grid-row: 4;
@@ -563,7 +567,7 @@ header nav li a:hover {
   width: 100%;
   height: 140px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .form form .form-message textarea {
     height: 80px;
   }
@@ -572,7 +576,7 @@ header nav li a:hover {
   grid-column: 2/4;
   grid-row: 4;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .form form .form-submit {
     grid-column: 2;
     grid-row: 5;
@@ -584,7 +588,7 @@ header nav li a:hover {
   height: 40px;
   border: 0px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   .form form .form-submit input {
     width: 100%;
     margin-top: 0;

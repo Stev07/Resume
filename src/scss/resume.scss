@@ -10,7 +10,6 @@
     grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
     grid-template-rows: 45% 45% 10%;
     align-items: center;
-    align-items: center;
     line-height: 30px;
 
     .resume-title {
@@ -41,6 +40,10 @@
   #skills {
     height: 50%;
     text-align: center;
+
+    @media screen and (max-width: 576px) {
+      height: 100vh;
+    }
 
     h4{
       padding-top: 5vh;

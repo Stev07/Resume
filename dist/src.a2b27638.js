@@ -28020,7 +28020,7 @@ function (_React$Component) {
         className: "contact-me"
       }, "contact me"), "!", _react.default.createElement("br", null), "I'm ", _react.default.createElement("span", {
         className: "contact-avaible"
-      }, "avaible"), "for any contract/project.")), _react.default.createElement(_Form.default, null), _react.default.createElement("footer", null, _react.default.createElement("div", {
+      }, "avaible"), " for any contract/project.")), _react.default.createElement(_Form.default, null), _react.default.createElement("footer", null, _react.default.createElement("div", {
         className: "citation"
       }, _react.default.createElement("p", null, "\"As far as the future is concerned, it is not a question of predicting it, but of making it possible.\"")), _react.default.createElement("div", {
         className: "footer-info"
@@ -28188,7 +28188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37987" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37861" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
