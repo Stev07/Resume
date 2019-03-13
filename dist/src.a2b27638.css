@@ -160,12 +160,23 @@ header nav li a:hover {
   grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
   grid-template-rows: 45% 45% 10%;
 }
+@media screen and (max-width: 400px) {
+  #about .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+  }
+}
 #about .about-img {
   width: 100%;
   height: 100%;
   grid-column: 2;
   grid-row: 1/3;
   background: url(avatarsteve.4c88650d.png) no-repeat center left;
+}
+@media screen and (max-width: 400px) {
+  #about .about-img {
+    display: none;
+  }
 }
 #about .about-me {
   width: 100%;
@@ -181,6 +192,7 @@ header nav li a:hover {
   #about .about-me {
     display: block;
     padding-top: 40px;
+    text-align: center;
   }
 }
 #about .about-me h4 {
@@ -200,6 +212,11 @@ header nav li a:hover {
   height: 100%;
   grid-column: 3;
   grid-row: 2;
+}
+@media screen and (max-width: 400px) {
+  #about .about-details {
+    text-align: center;
+  }
 }
 #about .about-details h4 {
   color: white;
