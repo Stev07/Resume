@@ -20,7 +20,7 @@ class App extends React.Component {
         document.documentElement.scrollTop > 80
       ) {
         document.querySelector("nav").style.background = "rgba(0,0,0,0.4)";
-        document.querySelector("header").style.height = "5vh";
+        document.querySelector("header").style.height = "6vh";
       } else {
         document.querySelector("nav").style.background = "transparent";
         document.querySelector("header").style.height = "12vh";

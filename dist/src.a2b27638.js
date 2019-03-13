@@ -28127,7 +28127,7 @@ function (_React$Component) {
       var scrollFunction = function scrollFunction() {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
           document.querySelector("nav").style.background = "rgba(0,0,0,0.4)";
-          document.querySelector("header").style.height = "5vh";
+          document.querySelector("header").style.height = "6vh";
         } else {
           document.querySelector("nav").style.background = "transparent";
           document.querySelector("header").style.height = "12vh";
