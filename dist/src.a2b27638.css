@@ -66,7 +66,7 @@ header nav li a:hover {
 }
 .content .infoBox {
   height: 80%;
-  padding-top: 15%;
+  padding-top: 10%;
 }
 .content .infoBox div > h1 {
   font-size: 70px;
@@ -163,7 +163,7 @@ header nav li a:hover {
 @media screen and (max-width: 400px) {
   #about .about {
     grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 60% 40%;
   }
 }
 #about .about-img {
@@ -235,12 +235,19 @@ header nav li a:hover {
 }
 @media screen and (max-width: 400px) {
   #about .education {
-    line-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
   }
 }
 #about .education .education-title {
   grid-column: 2;
   grid-row: 1;
+}
+@media screen and (max-width: 400px) {
+  #about .education .education-title {
+    grid-row: 1;
+  }
 }
 #about .education .education-item1 {
   grid-column: 3;

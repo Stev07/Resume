@@ -27534,7 +27534,7 @@ function (_React$Component) {
         className: "about-me"
       }, _react.default.createElement("h4", null, "About me"), _react.default.createElement("br", null), _react.default.createElement("p", null, "I have finished my B.E. in Computer Science and have been working in industry for past few years.")), _react.default.createElement("div", {
         className: "about-details"
-      }, _react.default.createElement("h4", null, "Contact details"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("p", null, "Steve Dossin"), _react.default.createElement("p", null, "Belgium, Li\xE8ge"), _react.default.createElement("p", null, "https:www.stevedossin.me"))), _react.default.createElement("section", {
+      }, _react.default.createElement("h4", null, "Contact details"), _react.default.createElement("br", null), _react.default.createElement("p", null, "Steve Dossin"), _react.default.createElement("p", null, "Belgium, Li\xE8ge"), _react.default.createElement("p", null, "https:www.stevedossin.me"))), _react.default.createElement("section", {
         id: "education",
         className: "education"
       }, _react.default.createElement("div", {

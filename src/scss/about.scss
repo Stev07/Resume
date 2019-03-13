@@ -13,7 +13,7 @@
 
     @media screen and (max-width: 400px) {
       grid-template-columns: 1fr;
-      grid-template-rows: 50% 50%;
+      grid-template-rows: 60% 40%;
       
     }
 
@@ -90,12 +90,19 @@
     line-height: 30px;
 
     @media screen and (max-width: 400px) {
-      line-height: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
     }
 
     .education-title {
       grid-column: 2;
       grid-row: 1;
+
+      @media screen and (max-width: 400px) {
+        grid-row:1;
+        
+      }
     }
 
     .education-item1 {

@@ -14,7 +14,7 @@ class About extends React.Component {
                     <p>I have finished my B.E. in Computer Science and have been working in industry for past few years.</p>
                   </div>
                     <div className="about-details">
-                    <h4>Contact details</h4><br/><br/>
+                    <h4>Contact details</h4><br/>
                     <p>Steve Dossin</p>
                     <p>Belgium, Liège</p>
                     <p>https:www.stevedossin.me</p>
