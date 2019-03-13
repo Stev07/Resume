@@ -30,7 +30,7 @@ header nav {
 }
 @media screen and (max-width: 400px) {
   header nav {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 header nav li {
@@ -114,7 +114,7 @@ header nav li a:hover {
 @media screen and (max-width: 400px) {
   .content .infoBox .separate {
     width: 80%;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 .content .infoBox .developer {
@@ -433,6 +433,11 @@ header nav li a:hover {
 }
 #contact footer .footer-info .social .social-icon:hover {
   color: #46a4d7;
+}
+@media screen and (max-width: 400px) {
+  #contact footer .footer-info .social .social-icon {
+    margin: 0 40px;
+  }
 }
 #contact footer .footer-info .social a {
   color: white;

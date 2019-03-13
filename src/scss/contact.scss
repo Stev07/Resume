@@ -61,6 +61,10 @@
           &:hover {
             color: #46a4d7;
           }
+
+          @media screen and (max-width: 400px) {
+            margin: 0 40px;
+          }
         }
 
         a {
