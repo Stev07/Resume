@@ -31,7 +31,7 @@
       font-family: 'Russo One', sans-serif;
       font-weight:normal;
       @media screen and (max-width: 400px) {
-        margin-top: 30px;
+        margin-top: 10px;
         font-size:35px;
         padding-bottom: 20px;
       }
@@ -68,7 +68,7 @@
       margin: 0 auto;
       @media screen and (max-width: 400px) {
         width: 80%;
-        margin-top: 50px;
+        margin-top: 20px;
       }
     }
     .developer {
@@ -81,6 +81,10 @@
       justify-content: center;
       font-size: 30px;
       padding-top: 25px;
+
+      @media screen and (max-width: 400px) {
+      padding-top: 10px;
+      }
 
       .social-icon {
         margin: 0 30px;
