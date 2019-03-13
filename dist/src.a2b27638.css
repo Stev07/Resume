@@ -400,6 +400,11 @@ header nav li a:hover {
   font-style: italic;
   font-family: sans-serif !important;
 }
+@media screen and (max-width: 400px) {
+  #contact footer .citation {
+    font-size: 12px;
+  }
+}
 #contact footer .footer-info {
   height: 30vh;
   width: 100%;
@@ -458,7 +463,19 @@ header nav li a:hover {
   grid-template-rows: 1fr 1fr 1fr 0.5fr;
   padding-top: 45px;
 }
-.form form .form-name, .form form .form-email, .form form .form-subject, .form form .form-message, .form form .form-submit, .form form textarea {
+@media screen and (max-width: 400px) {
+  .form form {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
+  }
+}
+.form form .form-name,
+.form form .form-email,
+.form form .form-subject,
+.form form .form-message,
+.form form .form-submit,
+.form form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -480,19 +497,42 @@ header nav li a:hover {
   grid-row: 1/4;
   align-self: center;
 }
+@media screen and (max-width: 400px) {
+  .form form .form-message {
+    grid-column: 2;
+    grid-row: 4;
+  }
+}
 .form form .form-message textarea {
   width: 100%;
   height: 140px;
+}
+@media screen and (max-width: 400px) {
+  .form form .form-message textarea {
+    height: 80px;
+  }
 }
 .form form .form-submit {
   grid-column: 2/4;
   grid-row: 4;
 }
+@media screen and (max-width: 400px) {
+  .form form .form-submit {
+    grid-column: 2;
+    grid-row: 5;
+  }
+}
 .form form .form-submit input {
-  margin-top: 50px;
+  margin-top: 40px;
   width: 200px;
   height: 40px;
   border: 0px;
+}
+@media screen and (max-width: 400px) {
+  .form form .form-submit input {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 .form form .form-submit input:hover {
   background: #46a4d7;

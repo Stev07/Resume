@@ -1,54 +1,85 @@
-.form{
-    width: 100%;
-    height: 50%;
-    form{
-        height: 60%;
-        display:grid;
-        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-        grid-template-rows: 1fr 1fr 1fr 0.5fr;
-        padding-top: 45px;
+.form {
+  width: 100%;
+  height: 50%;
+  form {
+    height: 60%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    padding-top: 45px;
 
-        .form-name, .form-email, .form-subject, .form-message, .form-submit, textarea {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .form-name{
-            grid-column:2;
-            grid-row:1;
-        }
-        .form-email{
-            grid-column:2;
-            grid-row:2;
-        }
-        .form-subject{
-            grid-column:2;
-            grid-row:3;
-        }
-        .form-message{
-            grid-column:3;
-            grid-row:1/4;
-            align-self: center;
-            
-            textarea{
-                width:100%;
-                height:140px;
-            }
-        }
-        .form-submit{
-            grid-column:2/4;
-            grid-row:4;
-            
-            input{
-                margin-top: 50px;
-                width:200px;
-                height: 40px;
-                border:0px;
-
-                &:hover{background: #46a4d7;}
-            }
-            
-        }
+    @media screen and (max-width: 400px) {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 0.5fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
     }
+
+    .form-name,
+    .form-email,
+    .form-subject,
+    .form-message,
+    .form-submit,
+    textarea {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-name {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .form-email {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .form-subject {
+      grid-column: 2;
+      grid-row: 3;
+    }
+    .form-message {
+      grid-column: 3;
+      grid-row: 1/4;
+      align-self: center;
+
+      @media screen and (max-width: 400px) {
+        grid-column: 2;
+        grid-row:4;
+      }
+
+      textarea {
+        width: 100%;
+        height: 140px;
+
+        @media screen and (max-width: 400px) {
+            height: 80px;
+          }
+      }
+    }
+    .form-submit {
+      grid-column: 2/4;
+      grid-row: 4;
+
+      @media screen and (max-width: 400px) {
+        grid-column: 2;
+        grid-row:5;
+      }
+
+      input {
+        margin-top: 40px;
+        width: 200px;
+        height: 40px;
+        border: 0px;
+
+        @media screen and (max-width: 400px) {
+            width: 100%;
+            margin-top: 0;
+          }
+
+        &:hover {
+          background: #46a4d7;
+        }
+      }
+    }
+  }
 }
