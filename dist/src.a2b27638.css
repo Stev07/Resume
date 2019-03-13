@@ -55,7 +55,6 @@ header nav li a:hover {
 
 .content {
   height: 88%;
-  max-height: 88%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,19 +63,9 @@ header nav li a:hover {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
-@media screen and (max-width: 400px) {
-  .content {
-    justify-content: center;
-  }
-}
 .content .infoBox {
   height: 80%;
   padding-top: 15%;
-}
-@media screen and (max-width: 400px) {
-  .content .infoBox {
-    padding-top: 5%;
-  }
 }
 .content .infoBox div > h1 {
   font-size: 70px;
@@ -85,7 +74,7 @@ header nav li a:hover {
 }
 @media screen and (max-width: 400px) {
   .content .infoBox div > h1 {
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 35px;
     padding-bottom: 20px;
   }
@@ -99,7 +88,6 @@ header nav li a:hover {
 @media screen and (max-width: 400px) {
   .content .infoBox div > h2 {
     font-size: 20px;
-    margin-bottom: 25px;
   }
 }
 .content .infoBox div > p {
@@ -112,10 +100,9 @@ header nav li a:hover {
 }
 @media screen and (max-width: 400px) {
   .content .infoBox div > p {
-    font-size: 12px;
-    line-height: 20px;
-    width: 85%;
-    padding-bottom: 0px;
+    font-size: 15px;
+    line-height: 25px;
+    width: 80%;
   }
 }
 .content .infoBox .separate {
@@ -127,7 +114,7 @@ header nav li a:hover {
 @media screen and (max-width: 400px) {
   .content .infoBox .separate {
     width: 80%;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
 .content .infoBox .developer {
@@ -141,11 +128,6 @@ header nav li a:hover {
   font-size: 30px;
   padding-top: 25px;
 }
-@media screen and (max-width: 400px) {
-  .content .infoBox .social {
-    padding-top: 10px;
-  }
-}
 .content .infoBox .social .social-icon {
   margin: 0 30px;
   transition: 0.5s;
@@ -155,10 +137,6 @@ header nav li a:hover {
 }
 .content .infoBox .social a {
   color: white;
-}
-.content .down {
-  position: absolute;
-  bottom: 2%;
 }
 .content .down a {
   font-size: 35px;
