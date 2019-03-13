@@ -421,7 +421,7 @@ header nav li a:hover {
 @media screen and (max-width: 400px) {
   #works .works-box .works-item {
     margin: 0;
-    width: 80%;
+    width: 60%;
     height: 20%;
   }
 }
