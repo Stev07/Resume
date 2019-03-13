@@ -7,12 +7,12 @@ class Hello extends React.Component {
     return (
       <div className="content">
         <div className="infoBox">
-          <div className="">
+          <div className="hello-name">
             <h1>
               <span className="developer">I am</span> Steve Dossin
             </h1>
           </div>
-          <div className="">
+          <div className="hello-dev">
             <h2>
               Junior Web <span className="developer">Developer</span>
             </h2>

@@ -10,7 +10,7 @@ class About extends React.Component {
                   
                 </div>
                   <div className="about-me">
-                    <h4>About me</h4>
+                    <h4>About me</h4><br/>
                     <p>I have finished my B.E. in Computer Science and have been working in industry for past few years.</p>
                   </div>
                     <div className="about-details">

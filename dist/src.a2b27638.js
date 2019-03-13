@@ -27425,11 +27425,11 @@ function (_React$Component) {
       }, _react.default.createElement("div", {
         className: "infoBox"
       }, _react.default.createElement("div", {
-        className: ""
+        className: "hello-name"
       }, _react.default.createElement("h1", null, _react.default.createElement("span", {
         className: "developer"
       }, "I am"), " Steve Dossin")), _react.default.createElement("div", {
-        className: ""
+        className: "hello-dev"
       }, _react.default.createElement("h2", null, "Junior Web ", _react.default.createElement("span", {
         className: "developer"
       }, "Developer"))), _react.default.createElement("div", null, _react.default.createElement("p", null, "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.")), _react.default.createElement("div", {
@@ -27532,7 +27532,7 @@ function (_React$Component) {
         className: "about-img"
       }), _react.default.createElement("div", {
         className: "about-me"
-      }, _react.default.createElement("h4", null, "About me"), _react.default.createElement("p", null, "I have finished my B.E. in Computer Science and have been working in industry for past few years.")), _react.default.createElement("div", {
+      }, _react.default.createElement("h4", null, "About me"), _react.default.createElement("br", null), _react.default.createElement("p", null, "I have finished my B.E. in Computer Science and have been working in industry for past few years.")), _react.default.createElement("div", {
         className: "about-details"
       }, _react.default.createElement("h4", null, "Contact details"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("p", null, "Steve Dossin"), _react.default.createElement("p", null, "Belgium, Li\xE8ge"), _react.default.createElement("p", null, "https:www.stevedossin.me"))), _react.default.createElement("section", {
         id: "education",
@@ -28188,7 +28188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34003" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34061" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

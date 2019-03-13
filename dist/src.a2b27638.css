@@ -1,11 +1,12 @@
 @charset "UTF-8";
 #main {
   overflow: hidden;
-  scroll-behavior: smooth;
 }
 #main #hello {
   width: 100vw;
+  max-height: 100vh;
   height: 100vh;
+  position: relative;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0), black), url(gleb-kozenko-262687-unsplash.b2b9ec46.jpg);
 }@import url("https://fonts.googleapis.com/css?family=Open+Sans");
@@ -27,8 +28,18 @@ header nav {
   font-size: 15px;
   font-weight: bold;
 }
+@media screen and (max-width: 400px) {
+  header nav {
+    font-size: 10px;
+  }
+}
 header nav li {
   margin: 0px 15px;
+}
+@media screen and (max-width: 400px) {
+  header nav li {
+    margin: 0px 5px;
+  }
 }
 header nav li a {
   text-decoration: none;
@@ -44,6 +55,7 @@ header nav li a:hover {
 
 .content {
   height: 88%;
+  max-height: 88%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,9 +64,19 @@ header nav li a:hover {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
+@media screen and (max-width: 400px) {
+  .content {
+    justify-content: center;
+  }
+}
 .content .infoBox {
   height: 80%;
   padding-top: 15%;
+}
+@media screen and (max-width: 400px) {
+  .content .infoBox {
+    padding-top: 5%;
+  }
 }
 .content .infoBox div > h1 {
   font-size: 70px;
@@ -63,7 +85,6 @@ header nav li a:hover {
 }
 @media screen and (max-width: 400px) {
   .content .infoBox div > h1 {
-    margin-top: 30px;
     font-size: 35px;
     padding-bottom: 20px;
   }
@@ -77,6 +98,7 @@ header nav li a:hover {
 @media screen and (max-width: 400px) {
   .content .infoBox div > h2 {
     font-size: 20px;
+    margin-bottom: 25px;
   }
 }
 .content .infoBox div > p {
@@ -89,9 +111,10 @@ header nav li a:hover {
 }
 @media screen and (max-width: 400px) {
   .content .infoBox div > p {
-    font-size: 15px;
-    line-height: 25px;
-    width: 80%;
+    font-size: 12px;
+    line-height: 20px;
+    width: 85%;
+    padding-bottom: 0px;
   }
 }
 .content .infoBox .separate {
@@ -126,6 +149,10 @@ header nav li a:hover {
 }
 .content .infoBox .social a {
   color: white;
+}
+.content .down {
+  position: absolute;
+  bottom: 2%;
 }
 .content .down a {
   font-size: 35px;
@@ -163,7 +190,13 @@ header nav li a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 25px;
+}
+@media screen and (max-width: 400px) {
+  #about .about-me {
+    display: block;
+    padding-top: 40px;
+  }
 }
 #about .about-me h4 {
   color: white;
@@ -171,6 +204,11 @@ header nav li a:hover {
 #about .about-me p {
   color: #7a7a7a;
   line-height: 30px;
+}
+@media screen and (max-width: 400px) {
+  #about .about-me p {
+    line-height: 22px;
+  }
 }
 #about .about-details {
   width: 100%;
@@ -193,6 +231,11 @@ header nav li a:hover {
   align-items: center;
   line-height: 30px;
 }
+@media screen and (max-width: 400px) {
+  #about .education {
+    line-height: 20px;
+  }
+}
 #about .education .education-title {
   grid-column: 2;
   grid-row: 1;
@@ -200,6 +243,22 @@ header nav li a:hover {
 #about .education .education-item1 {
   grid-column: 3;
   grid-row: 1;
+}
+@media screen and (max-width: 400px) {
+  #about .education .education-item1 {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #about .education .education-item1 h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #about .education .education-item1 h5 {
+    padding-bottom: 10px;
+  }
 }
 #about .education .education-item2 {
   grid-column: 3;
