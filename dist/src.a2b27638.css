@@ -64,6 +64,11 @@ header nav li a:hover {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
+@media screen and (max-width: 400px) {
+  .content {
+    position: relative;
+  }
+}
 .content .infoBox {
   height: 80%;
   padding-top: 10%;
@@ -104,7 +109,7 @@ header nav li a:hover {
     font-size: 15px;
     line-height: 25px;
     width: 80%;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
   }
 }
 .content .infoBox .separate {
@@ -143,7 +148,6 @@ header nav li a:hover {
 @media screen and (max-width: 400px) {
   .content .down {
     width: 80%;
-    margin-top: 40px;
   }
 }
 .content .down a {
