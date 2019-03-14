@@ -95,7 +95,7 @@
 
       @media screen and (max-width: 576px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 100px;
         justify-content: center;
         text-align: center;
       }
