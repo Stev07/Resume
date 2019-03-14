@@ -230,6 +230,7 @@ header nav li a:hover {
 @media screen and (max-width: 576px) {
   #about .about-details {
     text-align: center;
+    padding-bottom: 10px;
   }
 }
 #about .about-details h4 {
@@ -270,6 +271,11 @@ header nav li a:hover {
   grid-column: 3;
   grid-row: 1;
 }
+@media screen and (max-width: 576px) {
+  #about .education .education-item1 p {
+    display: none;
+  }
+}
 #about .education .education-item2 {
   grid-column: 3;
   grid-row: 2;
@@ -278,6 +284,11 @@ header nav li a:hover {
   #about .education .education-item2 {
     text-align: center;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about .education .education-item2 p {
+    display: none;
   }
 }
 #about .education .separate {
@@ -301,17 +312,43 @@ header nav li a:hover {
   align-items: center;
   line-height: 30px;
 }
+@media screen and (max-width: 576px) {
+  #resume .resume {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
 #resume .resume .resume-title {
   grid-column: 2;
   grid-row: 1;
+}
+@media screen and (max-width: 576px) {
+  #resume .resume .resume-title {
+    width: 100%;
+    text-align: center;
+    grid-row: 1;
+  }
 }
 #resume .resume .resume-item1 {
   grid-column: 3;
   grid-row: 1;
 }
+@media screen and (max-width: 576px) {
+  #resume .resume .resume-item1 p {
+    display: none;
+  }
+}
 #resume .resume .resume-item2 {
   grid-column: 3;
   grid-row: 2;
+}
+@media screen and (max-width: 576px) {
+  #resume .resume .resume-item2 p {
+    display: none;
+  }
 }
 #resume .resume .separate {
   grid-row: 3;
@@ -324,11 +361,6 @@ header nav li a:hover {
 #resume #skills {
   height: 50%;
   text-align: center;
-}
-@media screen and (max-width: 576px) {
-  #resume #skills {
-    height: 100vh;
-  }
 }
 #resume #skills h4 {
   padding-top: 5vh;
@@ -343,6 +375,13 @@ header nav li a:hover {
   align-items: center;
   opacity: 0;
   transition: 4s;
+}
+@media screen and (max-width: 576px) {
+  #resume #skills .skills-box {
+    width: 100%;
+    text-align: center;
+    grid-row: 1;
+  }
 }
 #resume #skills .skills-box > * {
   width: 40%;

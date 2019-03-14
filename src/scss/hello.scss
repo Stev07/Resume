@@ -11,7 +11,7 @@
   justify-content: center;
   color: white;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   @media screen and (max-width: 576px) {
     position: relative;
@@ -22,21 +22,21 @@
     padding-top: 10%;
     div > h1 {
       font-size: 70px;
-      font-family: 'Russo One', sans-serif;
-      font-weight:normal;
+      font-family: "Russo One", sans-serif;
+      font-weight: normal;
       @media screen and (max-width: 576px) {
         margin-top: 30px;
-        font-size:35px;
+        font-size: 35px;
         padding-bottom: 20px;
       }
     }
     div > h2 {
       font-size: 30px;
       margin-bottom: 50px;
-      font-family: 'Russo One', sans-serif;
-      font-weight:normal;
+      font-family: "Russo One", sans-serif;
+      font-weight: normal;
       @media screen and (max-width: 576px) {
-        font-size:20px;
+        font-size: 20px;
       }
     }
     div > p {
@@ -47,7 +47,7 @@
       font-size: 18px;
       line-height: 35px;
       @media screen and (max-width: 576px) {
-        font-size:15px;
+        font-size: 15px;
         line-height: 25px;
         width: 80%;
         padding-bottom: 20px;
@@ -82,13 +82,15 @@
         }
       }
 
-      a {color: white}
+      a {
+        color: white;
+      }
     }
   }
 
   .down {
     @media screen and (max-width: 576px) {
-      font-size:15px;
+      font-size: 15px;
       line-height: 25px;
       width: 80%;
       padding-bottom: 20px;
