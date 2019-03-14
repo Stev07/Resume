@@ -10,7 +10,7 @@
 
     @media screen and (max-width: 576px) {
       display: grid;
-      grid-template-columns: 0.5fr 1fr 0.5fr;
+      grid-template-columns: 0.2fr 1fr 0.2fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
     }
 
@@ -28,14 +28,34 @@
     .form-name {
       grid-column: 2;
       grid-row: 1;
+      @media screen and (max-width: 576px) {
+        grid-column: 2;
+        grid-row:1;
+      }
+
+      input{
+        @media screen and (max-width: 576px) {
+          width: 100%;
+        }
+      }
     }
     .form-email {
       grid-column: 2;
       grid-row: 2;
+      input{
+        @media screen and (max-width: 576px) {
+          width: 100%;
+        }
+      }
     }
     .form-subject {
       grid-column: 2;
       grid-row: 3;
+      input{
+        @media screen and (max-width: 576px) {
+          width: 100%;
+        }
+      }
     }
     .form-message {
       grid-column: 3;

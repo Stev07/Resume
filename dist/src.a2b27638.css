@@ -636,7 +636,7 @@ header nav li a:hover {
 @media screen and (max-width: 576px) {
   .form form {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
   }
 }
@@ -654,13 +654,34 @@ header nav li a:hover {
   grid-column: 2;
   grid-row: 1;
 }
+@media screen and (max-width: 576px) {
+  .form form .form-name {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+@media screen and (max-width: 576px) {
+  .form form .form-name input {
+    width: 100%;
+  }
+}
 .form form .form-email {
   grid-column: 2;
   grid-row: 2;
 }
+@media screen and (max-width: 576px) {
+  .form form .form-email input {
+    width: 100%;
+  }
+}
 .form form .form-subject {
   grid-column: 2;
   grid-row: 3;
+}
+@media screen and (max-width: 576px) {
+  .form form .form-subject input {
+    width: 100%;
+  }
 }
 .form form .form-message {
   grid-column: 3;
