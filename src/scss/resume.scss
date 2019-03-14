@@ -4,7 +4,7 @@
   background: white;
   font-family: 'Montserrat', sans-serif;
   @media screen and (max-width: 576px) {
-    height: 160vh;
+    height: 150vh;
   }
 
   .resume {
@@ -94,8 +94,10 @@
 
 
       @media screen and (max-width: 576px) {
-        display: flex;
-        flex-wrap:wrap;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        text-align: center;
       }
 
       > * {
@@ -103,49 +105,89 @@
         margin: 0 auto;
 
         @media screen and (max-width: 576px) {
-          width:30%;
+          width:90%;
         }
       }
 
       .skills-html {
         grid-column: 2;
         grid-row: 1;
+        @media screen and (max-width: 576px) {
+          grid-column: 1;
+          grid-row: 1;
+        }
       }
       .skills-css {
         grid-column: 3;
         grid-row: 1;
+        @media screen and (max-width: 576px) {
+          grid-column: 2;
+          grid-row: 1;
+        }
       }
       .skills-js {
         grid-column: 4;
         grid-row: 1;
+        @media screen and (max-width: 576px) {
+          grid-column: 3;
+          grid-row: 1;
+        }
       }
       .skills-react {
         grid-column: 5;
         grid-row: 1;
+        @media screen and (max-width: 576px) {
+          grid-column: 1;
+          grid-row: 2;
+        }
       }
       .skills-node {
         grid-column: 6;
         grid-row: 1;
+        @media screen and (max-width: 576px) {
+          grid-column: 2;
+          grid-row: 2;
+        }
       }
       .skills-vue {
         grid-column: 2;
         grid-row: 2;
+        @media screen and (max-width: 576px) {
+          grid-column: 3;
+          grid-row: 2;
+        }
       }
       .skills-mysql {
         grid-column: 4;
         grid-row: 2;
+        @media screen and (max-width: 576px) {
+          grid-column: 1;
+          grid-row: 3;
+        }
       }
       .skills-mongo {
         grid-column: 3;
         grid-row: 2;
+        @media screen and (max-width: 576px) {
+          grid-column: 2;
+          grid-row: 3;
+        }
       }
       .skills-sass {
         grid-column: 5;
         grid-row: 2;
+        @media screen and (max-width: 576px) {
+          grid-column: 3;
+          grid-row: 3;
+        }
       }
       .skills-git {
         grid-column: 6;
         grid-row: 2;
+        @media screen and (max-width: 576px) {
+          grid-column: 2;
+          grid-row: 4;
+        }
       }
     }
   }
