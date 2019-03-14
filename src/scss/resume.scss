@@ -3,6 +3,9 @@
   height: 100vh;
   background: white;
   font-family: 'Montserrat', sans-serif;
+  @media screen and (max-width: 576px) {
+    height: 150vh;
+  }
 
   .resume {
     height: 50%;
@@ -13,6 +16,7 @@
     line-height: 30px;
 
     @media screen and (max-width: 576px) {
+      height: 33.33%;
       display: flex;
       flex-wrap: wrap;
       text-align: center;
@@ -50,7 +54,6 @@
       p{
         @media screen and (max-width: 576px) {
           display: none;
-          
         }
       }
     }
@@ -68,6 +71,10 @@
   #skills {
     height: 50%;
     text-align: center;
+    @media screen and (max-width: 576px) {
+      height: 66.66%;
+      
+    }
 
     h4{
       padding-top: 5vh;
@@ -84,16 +91,20 @@
       opacity:0;
       transition: 4s;
 
+
+
       @media screen and (max-width: 576px) {
-        width: 100%;
-        text-align: center;
-        grid-row:1;
-        
+        display: flex;
+        flex-wrap:wrap;
       }
 
       > * {
         width:40%;
         margin: 0 auto;
+
+        @media screen and (max-width: 576px) {
+          width:30%;
+        }
       }
 
       .skills-html {

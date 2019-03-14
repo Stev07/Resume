@@ -305,6 +305,11 @@ header nav li a:hover {
   background: white;
   font-family: "Montserrat", sans-serif;
 }
+@media screen and (max-width: 576px) {
+  #resume {
+    height: 150vh;
+  }
+}
 #resume .resume {
   height: 50%;
   display: grid;
@@ -315,6 +320,7 @@ header nav li a:hover {
 }
 @media screen and (max-width: 576px) {
   #resume .resume {
+    height: 33.33%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -363,6 +369,11 @@ header nav li a:hover {
   height: 50%;
   text-align: center;
 }
+@media screen and (max-width: 576px) {
+  #resume #skills {
+    height: 66.66%;
+  }
+}
 #resume #skills h4 {
   padding-top: 5vh;
   margin-bottom: 30px;
@@ -379,14 +390,18 @@ header nav li a:hover {
 }
 @media screen and (max-width: 576px) {
   #resume #skills .skills-box {
-    width: 100%;
-    text-align: center;
-    grid-row: 1;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 #resume #skills .skills-box > * {
   width: 40%;
   margin: 0 auto;
+}
+@media screen and (max-width: 576px) {
+  #resume #skills .skills-box > * {
+    width: 30%;
+  }
 }
 #resume #skills .skills-box .skills-html {
   grid-column: 2;
