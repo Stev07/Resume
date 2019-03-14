@@ -379,7 +379,7 @@ header nav li a:hover {
   margin-bottom: 30px;
 }
 #resume #skills .skills-box {
-  height: 100%;
+  height: 85%;
   width: 100%;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
