@@ -24273,7 +24273,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../../../../Téléchargements/gleb-kozenko-262687-unsplash.jpg":[["gleb-kozenko-262687-unsplash.b2b9ec46.jpg","../../../Téléchargements/gleb-kozenko-262687-unsplash.jpg"],"../../../Téléchargements/gleb-kozenko-262687-unsplash.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scss/navigation.scss":[function(require,module,exports) {
+},{"./../img/gleb-kozenko-262687-unsplash-ConvertImage.jpg":[["gleb-kozenko-262687-unsplash-ConvertImage.3b05684d.jpg","src/img/gleb-kozenko-262687-unsplash-ConvertImage.jpg"],"src/img/gleb-kozenko-262687-unsplash-ConvertImage.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scss/navigation.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -27432,7 +27432,7 @@ function (_React$Component) {
         className: "hello-dev"
       }, _react.default.createElement("h2", null, "Junior Web ", _react.default.createElement("span", {
         className: "developer"
-      }, "Developer"))), _react.default.createElement("div", null, _react.default.createElement("p", null, "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.")), _react.default.createElement("div", {
+      }, "Developer"))), _react.default.createElement("div", null, _react.default.createElement("p", null, "IT passionate who loves sharing his knowledge, I became a professional web developer with the Becode training. Empath by nature, my listening and communication skills are always appreciated by teams and clients.")), _react.default.createElement("div", {
         className: "separate"
       }), _react.default.createElement("div", {
         className: "social"
@@ -27774,8 +27774,8 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/img/projects/pomodoro.png":[function(require,module,exports) {
-module.exports = "/pomodoro.2394abd0.png";
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/img/projects/pomodoro-ConvertImage.jpg":[function(require,module,exports) {
+module.exports = "/pomodoro-ConvertImage.74935cd6.jpg";
 },{}],"src/img/projects/bookshelf.png":[function(require,module,exports) {
 module.exports = "/bookshelf.fceaa337.png";
 },{}],"src/Components/Works.js":[function(require,module,exports) {
@@ -27790,7 +27790,7 @@ var _react = _interopRequireDefault(require("react"));
 
 require("../scss/works.scss");
 
-var _pomodoro = _interopRequireDefault(require("../img/projects/pomodoro.png"));
+var _pomodoroConvertImage = _interopRequireDefault(require("../img/projects/pomodoro-ConvertImage.jpg"));
 
 var _bookshelf = _interopRequireDefault(require("../img/projects/bookshelf.png"));
 
@@ -27838,7 +27838,7 @@ function (_React$Component) {
         target: "_blank",
         href: "https://stev07.github.io/React_Pomodoro/"
       }, _react.default.createElement("img", {
-        src: _pomodoro.default,
+        src: _pomodoroConvertImage.default,
         className: "pomodoro"
       }))), _react.default.createElement("div", {
         className: "works-item"
@@ -27848,7 +27848,7 @@ function (_React$Component) {
       })), _react.default.createElement("div", {
         className: "works-item"
       }, _react.default.createElement("img", {
-        src: _pomodoro.default,
+        src: _pomodoroConvertImage.default,
         className: "pomodoro"
       })), _react.default.createElement("div", {
         className: "works-item"
@@ -27864,7 +27864,7 @@ function (_React$Component) {
 
 var _default = Works;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../scss/works.scss":"src/scss/works.scss","../img/projects/pomodoro.png":"src/img/projects/pomodoro.png","../img/projects/bookshelf.png":"src/img/projects/bookshelf.png"}],"src/scss/contact.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../scss/works.scss":"src/scss/works.scss","../img/projects/pomodoro-ConvertImage.jpg":"src/img/projects/pomodoro-ConvertImage.jpg","../img/projects/bookshelf.png":"src/img/projects/bookshelf.png"}],"src/scss/contact.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -28188,7 +28188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40461" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42511" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

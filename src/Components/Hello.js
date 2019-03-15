@@ -19,9 +19,10 @@ class Hello extends React.Component {
           </div>
           <div>
             <p>
-              I like dabbling in various parts of frontend development and like
-              to learn about new technologies, write technical articles or
-              simply play games in my free time.
+              IT passionate who loves sharing his knowledge, I became a
+              professional web developer with the Becode training. Empath by
+              nature, my listening and communication skills are always
+              appreciated by teams and clients.
             </p>
           </div>
           <div className="separate" />

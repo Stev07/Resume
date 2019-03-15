@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #main {
   overflow: hidden;
 }
@@ -8,7 +7,7 @@
   height: 100vh;
   position: relative;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), black), url(gleb-kozenko-262687-unsplash.b2b9ec46.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black), url(gleb-kozenko-262687-unsplash-ConvertImage.3b05684d.jpg);
 }@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 header {
   height: 11%;
