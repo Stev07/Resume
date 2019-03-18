@@ -22,7 +22,7 @@ class Hello extends React.Component {
               IT passionate who loves sharing his knowledge, I became a
               professional web developer with the Becode training. Empath by
               nature, my listening and communication skills are always
-              appreciated by teams and clients.
+              appreciated by teams and clients. 
             </p>
           </div>
           <div className="separate" />

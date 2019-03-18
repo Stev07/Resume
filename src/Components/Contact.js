@@ -8,7 +8,7 @@ class Contact extends React.Component {
     return (
       <div id="contact">
         <div className="contactme">
-          <p>Feel free to <span className="contact-me">contact me</span>!<br />I'm <span className="contact-avaible">avaible</span> for any contract/project.</p>
+          <p>Feel free to <span className="contact-me">contact me</span>!<br />I'm <span className="contact-avaible">available</span> for any contract/project.</p>
         </div>
       
         <Form />
@@ -23,7 +23,7 @@ class Contact extends React.Component {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={500}
+                duration={1000}
               >
                 <i className="fas fa-arrow-alt-circle-up" />
               </Link>

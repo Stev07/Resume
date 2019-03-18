@@ -27778,6 +27778,8 @@ module.hot.accept(reloadCSS);
 module.exports = "/pomodoro-ConvertImage.74935cd6.jpg";
 },{}],"src/img/projects/bookshelf.png":[function(require,module,exports) {
 module.exports = "/bookshelf.fceaa337.png";
+},{}],"src/img/projects/visages.png":[function(require,module,exports) {
+module.exports = "/visages.75c9b410.png";
 },{}],"src/Components/Works.js":[function(require,module,exports) {
 "use strict";
 
@@ -27793,6 +27795,8 @@ require("../scss/works.scss");
 var _pomodoroConvertImage = _interopRequireDefault(require("../img/projects/pomodoro-ConvertImage.jpg"));
 
 var _bookshelf = _interopRequireDefault(require("../img/projects/bookshelf.png"));
+
+var _visages = _interopRequireDefault(require("../img/projects/visages.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27842,15 +27846,21 @@ function (_React$Component) {
         className: "pomodoro"
       }))), _react.default.createElement("div", {
         className: "works-item"
+      }, _react.default.createElement("a", {
+        target: "_blank",
+        href: "https://github.com/Stev07/Bookshelf/tree/develop"
       }, _react.default.createElement("img", {
         src: _bookshelf.default,
         className: "bookshelf"
-      })), _react.default.createElement("div", {
+      }))), _react.default.createElement("div", {
         className: "works-item"
+      }, _react.default.createElement("a", {
+        target: "_blank",
+        href: "http://www.visagesetcouleurs.be"
       }, _react.default.createElement("img", {
-        src: _pomodoroConvertImage.default,
-        className: "pomodoro"
-      })), _react.default.createElement("div", {
+        src: _visages.default,
+        className: "bookshelf"
+      }))), _react.default.createElement("div", {
         className: "works-item"
       }, _react.default.createElement("img", {
         src: _bookshelf.default,
@@ -27864,7 +27874,7 @@ function (_React$Component) {
 
 var _default = Works;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../scss/works.scss":"src/scss/works.scss","../img/projects/pomodoro-ConvertImage.jpg":"src/img/projects/pomodoro-ConvertImage.jpg","../img/projects/bookshelf.png":"src/img/projects/bookshelf.png"}],"src/scss/contact.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../scss/works.scss":"src/scss/works.scss","../img/projects/pomodoro-ConvertImage.jpg":"src/img/projects/pomodoro-ConvertImage.jpg","../img/projects/bookshelf.png":"src/img/projects/bookshelf.png","../img/projects/visages.png":"src/img/projects/visages.png"}],"src/scss/contact.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -28020,7 +28030,7 @@ function (_React$Component) {
         className: "contact-me"
       }, "contact me"), "!", _react.default.createElement("br", null), "I'm ", _react.default.createElement("span", {
         className: "contact-avaible"
-      }, "avaible"), " for any contract/project.")), _react.default.createElement(_Form.default, null), _react.default.createElement("footer", null, _react.default.createElement("div", {
+      }, "available"), " for any contract/project.")), _react.default.createElement(_Form.default, null), _react.default.createElement("footer", null, _react.default.createElement("div", {
         className: "citation"
       }, _react.default.createElement("p", null, "\"As far as the future is concerned, it is not a question of predicting it, but of making it possible.\"")), _react.default.createElement("div", {
         className: "footer-info"
@@ -28031,7 +28041,7 @@ function (_React$Component) {
         spy: true,
         smooth: true,
         offset: 0,
-        duration: 500
+        duration: 1000
       }, _react.default.createElement("i", {
         className: "fas fa-arrow-alt-circle-up"
       })), _react.default.createElement("div", {
@@ -28188,7 +28198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42511" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44023" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
