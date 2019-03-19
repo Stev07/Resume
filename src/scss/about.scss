@@ -1,11 +1,15 @@
 #about {
   width: 100vw;
-  height: 150vh;
+  height: 100vh;
   font-family: 'Montserrat', sans-serif;
+  @media screen and (max-width: 772px) {
+    height: 150vh;
+    
+  }
   
 
   .about {
-    height: 100vh;
+    height: 50%;
     width: 100%;
     background: #2b2b2b;
     display: grid;
@@ -13,6 +17,7 @@
     grid-template-rows: 45% 45% 10%;
 
     @media screen and (max-width: 772px) {
+      height: 100vh;
       grid-template-columns: 1fr;
       grid-template-rows: 55% 45%;
       
@@ -38,7 +43,7 @@
     height: 100%;
     grid-column: 3;
     grid-row: 1;
-    padding-top: 25px;
+    padding-top: 45px;
 
     @media screen and (max-width: 772px) {
       display: block;
@@ -48,15 +53,18 @@
 
     h4 {
       color: white;
-      margin-bottom: -10px;
     }
     p {
       color: #7a7a7a;
-      line-height: 30px;
+      line-height: 25px;
 
 
       @media screen and (min-width:446px) and (max-width: 773px) {
         padding: 50px;
+        
+      }
+      @media screen and (min-width:446px) and (max-width: 773px) {
+        line-height: 30px;
         
       }
     }
