@@ -17,13 +17,26 @@ class Resume extends React.Component {
           </div>
           <div className="resume-item1">
             <h3>Junior Web Developer</h3>
-            <h5><em>Becode | Oct 2018 - Mai 2019</em></h5>
-            <p>blablablablabla</p>
+            <h5>
+              <em>Becode | Oct 2018 - Mai 2019</em>
+            </h5>
+            <p>
+              Intensive 7 months coding training completed by 3-months
+              internship: -Active learning; -Achieving individual and group
+              projects for Liège area companies following the Agile and Scrum
+              methodologies; -Pair/group programming; -Watch presentation
+            </p>
           </div>
           <div className="resume-item2">
             <h3>Manager-Assistant</h3>
-            <h5><em>Lidl | Jan 2015 - Mar 2018</em></h5>
-            <p>blablablabla</p>
+            <h5>
+              <em>Lidl | Jan 2015 - Mar 2018</em>
+            </h5>
+            <p>
+              Managed a team of 20 employees Conducted team meetings and
+              trainings to update members on best practices Planned daily work
+              activities
+            </p>
           </div>
           <div className="separate" />
         </section>
