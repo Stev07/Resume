@@ -33,9 +33,7 @@ class Resume extends React.Component {
               <em>Lidl | Jan 2015 - Mar 2018</em>
             </h5>
             <p>
-              Managed a team of 20 employees Conducted team meetings and
-              trainings to update members on best practices Planned daily work
-              activities
+              Managed a team of 20 employees; Conducted team meetings and trainings to update members on best practices; Planned daily work activities.
             </p>
           </div>
           <div className="separate" />

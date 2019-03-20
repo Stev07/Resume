@@ -28935,7 +28935,7 @@ function (_React$Component) {
         className: "hello-dev"
       }, _react.default.createElement("h2", null, "Junior Web ", _react.default.createElement("span", {
         className: "developer"
-      }, "Developer"))), _react.default.createElement("div", null, _react.default.createElement("p", null, "DESCRIPTION")), _react.default.createElement("div", {
+      }, "Developer"))), _react.default.createElement("div", null, _react.default.createElement("p", null, "Fullstack Junior Web Developer is seeking an opportunity to extend my web development and multumedia editing skills and knowledge.")), _react.default.createElement("div", {
         className: "separate"
       }), _react.default.createElement("div", {
         className: "social"
@@ -29124,7 +29124,7 @@ function (_React$Component) {
         className: "resume-item1"
       }, _react.default.createElement("h3", null, "Junior Web Developer"), _react.default.createElement("h5", null, _react.default.createElement("em", null, "Becode | Oct 2018 - Mai 2019")), _react.default.createElement("p", null, "Intensive 7 months coding training completed by 3-months internship: -Active learning; -Achieving individual and group projects for Li\xE8ge area companies following the Agile and Scrum methodologies; -Pair/group programming; -Watch presentation")), _react.default.createElement("div", {
         className: "resume-item2"
-      }, _react.default.createElement("h3", null, "Manager-Assistant"), _react.default.createElement("h5", null, _react.default.createElement("em", null, "Lidl | Jan 2015 - Mar 2018")), _react.default.createElement("p", null, "Managed a team of 20 employees Conducted team meetings and trainings to update members on best practices Planned daily work activities")), _react.default.createElement("div", {
+      }, _react.default.createElement("h3", null, "Manager-Assistant"), _react.default.createElement("h5", null, _react.default.createElement("em", null, "Lidl | Jan 2015 - Mar 2018")), _react.default.createElement("p", null, "Managed a team of 20 employees; Conducted team meetings and trainings to update members on best practices; Planned daily work activities.")), _react.default.createElement("div", {
         className: "separate"
       })), _react.default.createElement("section", {
         id: "skills"
@@ -29702,7 +29702,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36807" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37921" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
