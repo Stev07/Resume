@@ -19,7 +19,7 @@ class Hello extends React.Component {
           </div>
           <div>
             <p>
-              Fullstack Junior Web Developer is seeking an opportunity to extend my web development and multumedia editing skills and knowledge.
+              Fullstack Junior Web Developer is seeking an opportunity to extend my web development and multimedia editing skills and knowledge.
             </p>
           </div>
           <div className="separate" />
