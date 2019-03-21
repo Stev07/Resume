@@ -28935,7 +28935,7 @@ function (_React$Component) {
         className: "hello-dev"
       }, _react.default.createElement("h2", null, "Junior Web ", _react.default.createElement("span", {
         className: "developer"
-      }, "Developer"))), _react.default.createElement("div", null, _react.default.createElement("p", null, "Fullstack Junior Web Developer is seeking an opportunity to extend my web development and multumedia editing skills and knowledge.")), _react.default.createElement("div", {
+      }, "Developer"))), _react.default.createElement("div", null, _react.default.createElement("p", null, "Fullstack Junior Web Developer is seeking an opportunity to extend my web development and multimedia editing skills and knowledge.")), _react.default.createElement("div", {
         className: "separate"
       }), _react.default.createElement("div", {
         className: "social"
@@ -29283,6 +29283,8 @@ module.exports = "/pomodoro-ConvertImage.74935cd6.jpg";
 module.exports = "/bookshelf.fceaa337.png";
 },{}],"src/img/projects/visages.png":[function(require,module,exports) {
 module.exports = "/visages.75c9b410.png";
+},{}],"src/img/projects/messenger.png":[function(require,module,exports) {
+module.exports = "/messenger.719a4017.png";
 },{}],"src/Components/Works.js":[function(require,module,exports) {
 "use strict";
 
@@ -29300,6 +29302,8 @@ var _pomodoroConvertImage = _interopRequireDefault(require("../img/projects/pomo
 var _bookshelf = _interopRequireDefault(require("../img/projects/bookshelf.png"));
 
 var _visages = _interopRequireDefault(require("../img/projects/visages.png"));
+
+var _messenger = _interopRequireDefault(require("../img/projects/messenger.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29365,10 +29369,13 @@ function (_React$Component) {
         className: "bookshelf"
       }))), _react.default.createElement("div", {
         className: "works-item"
+      }, _react.default.createElement("a", {
+        target: "_blank",
+        href: "https://github.com/Stev07/php-messenger"
       }, _react.default.createElement("img", {
-        src: _bookshelf.default,
-        className: "bookshelf"
-      }))));
+        src: _messenger.default,
+        className: "pomodoro"
+      })))));
     }
   }]);
 
@@ -29377,7 +29384,7 @@ function (_React$Component) {
 
 var _default = Works;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../scss/works.scss":"src/scss/works.scss","../img/projects/pomodoro-ConvertImage.jpg":"src/img/projects/pomodoro-ConvertImage.jpg","../img/projects/bookshelf.png":"src/img/projects/bookshelf.png","../img/projects/visages.png":"src/img/projects/visages.png"}],"src/scss/contact.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../scss/works.scss":"src/scss/works.scss","../img/projects/pomodoro-ConvertImage.jpg":"src/img/projects/pomodoro-ConvertImage.jpg","../img/projects/bookshelf.png":"src/img/projects/bookshelf.png","../img/projects/visages.png":"src/img/projects/visages.png","../img/projects/messenger.png":"src/img/projects/messenger.png"}],"src/scss/contact.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -29702,7 +29709,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37921" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37627" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

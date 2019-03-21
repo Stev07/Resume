@@ -4,6 +4,7 @@ import "../scss/works.scss";
 import pomodoro from "../img/projects/pomodoro-ConvertImage.jpg";
 import bookshelf from "../img/projects/bookshelf.png";
 import visages from "../img/projects/visages.png";
+import messenger from "../img/projects/messenger.png"
 
 class Works extends React.Component {
   render() {
@@ -26,7 +27,9 @@ class Works extends React.Component {
             </a>
           </div>
           <div className="works-item">
-            <img src={bookshelf} className="bookshelf" />
+          <a target="_blank" href="https://github.com/Stev07/php-messenger">
+            <img src={messenger} className="pomodoro" />
+          </a>
           </div>
         </div>
       </div>
