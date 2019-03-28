@@ -3,19 +3,15 @@ import "../scss/resume.scss";
 
 class Resume extends React.Component {
   render() {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > document.querySelector("#skills").offsetTop - 100) {
-        document.querySelector(".skills-box").style.opacity = "1";
-      }
-    });
+
 
     return (
       <div id="resume">
         <section id="resume" className="resume">
-          <div className="resume-title">
+          <div className="resume-title" data-aos="fade-left">
             <p>WORKS</p>
           </div>
-          <div className="resume-item1">
+          <div className="resume-item1" data-aos="fade-left">
             <h3>Junior Web Developer</h3>
             <h5>
               <em>Becode | Oct 2018 - Mai 2019</em>
@@ -27,13 +23,15 @@ class Resume extends React.Component {
               methodologies; -Pair/group programming; -Watch presentation
             </p>
           </div>
-          <div className="resume-item2">
+          <div className="resume-item2" data-aos="fade-left" data-aos-offset="-50">
             <h3>Manager-Assistant</h3>
             <h5>
               <em>Lidl | Jan 2015 - Mar 2018</em>
             </h5>
             <p>
-              Managed a team of 20 employees; Conducted team meetings and trainings to update members on best practices; Planned daily work activities.
+              Managed a team of 20 employees; Conducted team meetings and
+              trainings to update members on best practices; Planned daily work
+              activities.
             </p>
           </div>
           <div className="separate" />
@@ -41,7 +39,7 @@ class Resume extends React.Component {
 
         <section id="skills">
           <h4>Skills</h4>
-          <div className="skills-box">
+          <div className="skills-box" data-aos="flip-right" data-aos-duration="1500">
             <div class="skills-html">
               <svg viewBox="0 0 128 128">
                 <path

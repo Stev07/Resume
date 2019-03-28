@@ -59,7 +59,7 @@ class Header extends React.Component {
             spy={true}
             smooth={true}
             offset={0}
-            duration={500}
+            duration={800}
           >
             <li>
               <a className="nav-link" href="#">
@@ -73,7 +73,7 @@ class Header extends React.Component {
             spy={true}
             smooth={true}
             offset={0}
-            duration={700}
+            duration={800}
           >
             <li>
               <a  className="nav-link" href="#">
@@ -87,7 +87,7 @@ class Header extends React.Component {
             spy={true}
             smooth={true}
             offset={0}
-            duration={850}
+            duration={800}
           >
             <li>
               <a className="nav-link" href="#">
@@ -101,7 +101,7 @@ class Header extends React.Component {
             spy={true}
             smooth={true}
             offset={0}
-            duration={1000}
+            duration={800}
           >
             <li>
               <a className="nav-link" href="#">

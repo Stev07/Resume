@@ -6,8 +6,8 @@ class About extends React.Component {
     return (
       <div id="about">
         <section className="about">
-          <div className="about-img" />
-          <div className="about-me">
+          <div className="about-img" data-aos="fade-right" />
+          <div className="about-me" data-aos="fade-left">
             <h4>About me</h4>
             <br />
             <p>
@@ -17,7 +17,7 @@ class About extends React.Component {
               appreciated by teams and clients.
             </p>
           </div>
-          <div className="about-details">
+          <div className="about-details" data-aos="fade-left">
             <h4>Contact details</h4>
             <br />
             <p>Steve Dossin</p>
@@ -28,16 +28,16 @@ class About extends React.Component {
         </section>
 
         <section id="education" className="education">
-          <div className="education-title">
+          <div className="education-title" data-aos="fade-right">
             <p>EDUCATION</p>
           </div>
-          <div className="education-item1">
+          <div className="education-item1" data-aos="fade-right">
             <h3>Certificate relating to basic management knowledge</h3>
             <h5>
               <em>Saint-Lambert Herstal | 2013</em>
             </h5>
           </div>
-          <div className="education-item2">
+          <div className="education-item2" data-aos="fade-right">
             <h3>Accounting technician</h3>
             <h5>
               <em>Saint-Lambert Herstal | 2013</em>
