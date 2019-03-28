@@ -34,8 +34,8 @@ header {
           color:white;
           transition: 0.4s;
           &:hover{
-            color:#46a4d7;
-          }          
+            color:#46a4d7 !important;
+          }     
         }    
   }
 }
