@@ -28816,7 +28816,7 @@ function (_React$Component) {
         spy: true,
         smooth: true,
         offset: 0,
-        duration: 500
+        duration: 1000
       }, _react.default.createElement("li", null, _react.default.createElement("a", {
         className: "nav-link nav-active",
         a: true,
@@ -29671,7 +29671,7 @@ _aos.default.init({
   // offset (in px) from the original trigger point
   delay: 0,
   // values from 0 to 3000, with step 50ms
-  duration: 1000,
+  duration: 1500,
   // values from 0 to 3000, with step 50ms
   easing: 'ease',
   // default easing for AOS animations
@@ -29766,7 +29766,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36131" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36307" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

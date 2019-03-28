@@ -45,7 +45,7 @@ class Header extends React.Component {
             spy={true}
             smooth={true}
             offset={0}
-            duration={500}
+            duration={1000}
           >
             <li>
               <a className="nav-link nav-active" a href="#">
