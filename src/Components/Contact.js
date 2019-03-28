@@ -14,7 +14,7 @@ class Contact extends React.Component {
         <Form />
         
           <footer>
-            <div className="citation"><p>"As far as the future is concerned, it is not a question of predicting it, but of making it possible."</p></div>
+            <div className="citation" data-aos="flip-up"><p>"As far as the future is concerned, it is not a question of predicting it, but of making it possible."</p></div>
             <div className="footer-info">
               <Link
                 className="gotop"
