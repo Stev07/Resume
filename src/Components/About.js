@@ -7,7 +7,7 @@ class About extends React.Component {
       <div id="about">
         <section className="about">
           <div className="about-img" data-aos="fade-right" />
-          <div className="about-me" data-aos="fade-left">
+          <div className="about-me" data-aos="fade-left" >
             <h4>About me</h4>
             <br />
             <p>

@@ -38,8 +38,7 @@ class Resume extends React.Component {
         </section>
 
         <section id="skills">
-          <h4>Skills</h4>
-          <div className="skills-box" data-aos="flip-right" data-aos-duration="1500">
+          <div className="skills-box">
             <div class="skills-html">
               <svg viewBox="0 0 128 128">
                 <path

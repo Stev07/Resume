@@ -69,20 +69,17 @@
   }
 
   #skills {
-    height: 50%;
-    text-align: center;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media screen and (max-width: 576px) {
       height: 66%;
       
     }
 
-    h4{
-      padding-top: 5vh;
-      margin-bottom: 30px;
-    }
-
     .skills-box {
-      height: 85%;
+      height: 100%;
       width: 100%;
       display: grid;
       grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
