@@ -48,7 +48,7 @@ header nav li a {
   transition: 0.4s;
 }
 header nav li a:hover {
-  color: #46a4d7;
+  color: #46a4d7 !important;
 }
 * {
   margin: 0px;
@@ -396,7 +396,6 @@ header nav li a:hover {
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
   grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
-  opacity: 0;
   transition: 4s;
 }
 @media screen and (max-width: 576px) {
@@ -640,6 +639,18 @@ header nav li a:hover {
   width: 100%;
   height: 50%;
 }
+.form input {
+  height: 40px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+@media screen and (max-width: 576px) {
+  .form input {
+    height: 25px;
+  }
+}
 .form form {
   height: 60%;
   display: grid;
@@ -682,6 +693,7 @@ header nav li a:hover {
 .form form .form-email {
   grid-column: 2;
   grid-row: 2;
+  padding-top: 5px;
 }
 @media screen and (max-width: 576px) {
   .form form .form-email input {
@@ -691,6 +703,7 @@ header nav li a:hover {
 .form form .form-subject {
   grid-column: 2;
   grid-row: 3;
+  padding-top: 5px;
 }
 @media screen and (max-width: 576px) {
   .form form .form-subject input {
@@ -701,6 +714,7 @@ header nav li a:hover {
   grid-column: 3;
   grid-row: 1/4;
   align-self: center;
+  padding-top: 10px;
 }
 @media screen and (max-width: 576px) {
   .form form .form-message {
@@ -710,7 +724,12 @@ header nav li a:hover {
 }
 .form form .form-message textarea {
   width: 100%;
-  height: 140px;
+  height: 150px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 @media screen and (max-width: 576px) {
   .form form .form-message textarea {
@@ -725,13 +744,18 @@ header nav li a:hover {
   .form form .form-submit {
     grid-column: 2;
     grid-row: 5;
+    padding-top: 10px;
   }
 }
 .form form .form-submit input {
+  background: white;
   margin-top: 40px;
   width: 200px;
   height: 40px;
   border: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
 @media screen and (max-width: 576px) {
   .form form .form-submit input {

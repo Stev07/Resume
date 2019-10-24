@@ -34887,7 +34887,7 @@ function (_React$Component) {
         spy: true,
         smooth: true,
         offset: 0,
-        duration: 500
+        duration: 1000
       }, _react.default.createElement("li", null, _react.default.createElement("a", {
         className: "nav-link nav-active",
         a: true,
@@ -34901,7 +34901,7 @@ function (_React$Component) {
         spy: true,
         smooth: true,
         offset: 0,
-        duration: 500
+        duration: 800
       }, _react.default.createElement("li", null, _react.default.createElement("a", {
         className: "nav-link",
         href: "#"
@@ -34911,7 +34911,7 @@ function (_React$Component) {
         spy: true,
         smooth: true,
         offset: 0,
-        duration: 700
+        duration: 800
       }, _react.default.createElement("li", null, _react.default.createElement("a", {
         className: "nav-link",
         href: "#"
@@ -34921,7 +34921,7 @@ function (_React$Component) {
         spy: true,
         smooth: true,
         offset: 0,
-        duration: 850
+        duration: 800
       }, _react.default.createElement("li", null, _react.default.createElement("a", {
         className: "nav-link",
         href: "#"
@@ -34931,7 +34931,7 @@ function (_React$Component) {
         spy: true,
         smooth: true,
         offset: 0,
-        duration: 1000
+        duration: 800
       }, _react.default.createElement("li", null, _react.default.createElement("a", {
         className: "nav-link",
         href: "#"
@@ -35124,16 +35124,20 @@ function (_React$Component) {
         className: "about-me",
         "data-aos": "fade-left"
       }, _react.default.createElement("h4", null, "About me"), _react.default.createElement("br", null), _react.default.createElement("p", null, "IT passionate who loves sharing his knowledge, I became a professional web developer with the Becode training. Empath by nature, my listening and communication skills are always appreciated by teams and clients.")), _react.default.createElement("div", {
-        className: "about-details"
+        className: "about-details",
+        "data-aos": "fade-left"
       }, _react.default.createElement("h4", null, "Contact details"), _react.default.createElement("br", null), _react.default.createElement("p", null, "Steve Dossin"), _react.default.createElement("p", null, "Belgium, Li\xE8ge"), _react.default.createElement("p", null, "steve.dossin@gmail.com"), _react.default.createElement("p", null, "https://www.stevedossin.me"))), _react.default.createElement("section", {
         id: "education",
         className: "education"
       }, _react.default.createElement("div", {
-        className: "education-title"
+        className: "education-title",
+        "data-aos": "fade-right"
       }, _react.default.createElement("p", null, "EDUCATION")), _react.default.createElement("div", {
-        className: "education-item1"
+        className: "education-item1",
+        "data-aos": "fade-right"
       }, _react.default.createElement("h3", null, "Certificate relating to basic management knowledge"), _react.default.createElement("h5", null, _react.default.createElement("em", null, "Saint-Lambert Herstal | 2013"))), _react.default.createElement("div", {
-        className: "education-item2"
+        className: "education-item2",
+        "data-aos": "fade-right"
       }, _react.default.createElement("h3", null, "Accounting technician"), _react.default.createElement("h5", null, _react.default.createElement("em", null, "Saint-Lambert Herstal | 2013"))), _react.default.createElement("div", {
         className: "separate"
       })));
@@ -35196,22 +35200,21 @@ function (_React$Component) {
   _createClass(Resume, [{
     key: "render",
     value: function render() {
-      window.addEventListener("scroll", function () {
-        if (window.scrollY > document.querySelector("#skills").offsetTop - 100) {
-          document.querySelector(".skills-box").style.opacity = "1";
-        }
-      });
       return _react.default.createElement("div", {
         id: "resume"
       }, _react.default.createElement("section", {
         id: "resume",
         className: "resume"
       }, _react.default.createElement("div", {
-        className: "resume-title"
+        className: "resume-title",
+        "data-aos": "fade-left"
       }, _react.default.createElement("p", null, "WORKS")), _react.default.createElement("div", {
-        className: "resume-item1"
+        className: "resume-item1",
+        "data-aos": "fade-left"
       }, _react.default.createElement("h3", null, "Junior Web Developer"), _react.default.createElement("h5", null, _react.default.createElement("em", null, "Becode | Oct 2018 - Mai 2019")), _react.default.createElement("p", null, "Intensive 7 months coding training completed by 3-months internship: -Active learning; -Achieving individual and group projects for Li\xE8ge area companies following the Agile and Scrum methodologies; -Pair/group programming; -Watch presentation")), _react.default.createElement("div", {
-        className: "resume-item2"
+        className: "resume-item2",
+        "data-aos": "fade-left",
+        "data-aos-offset": "-50"
       }, _react.default.createElement("h3", null, "Manager-Assistant"), _react.default.createElement("h5", null, _react.default.createElement("em", null, "Lidl | Jan 2015 - Mar 2018")), _react.default.createElement("p", null, "Managed a team of 20 employees; Conducted team meetings and trainings to update members on best practices; Planned daily work activities.")), _react.default.createElement("div", {
         className: "separate"
       })), _react.default.createElement("section", {
@@ -35629,7 +35632,8 @@ function (_React$Component) {
       }, "contact me"), "!", _react.default.createElement("br", null), "I'm ", _react.default.createElement("span", {
         className: "contact-avaible"
       }, "available"), " for any contract/project.")), _react.default.createElement(_Form.default, null), _react.default.createElement("footer", null, _react.default.createElement("div", {
-        className: "citation"
+        className: "citation",
+        "data-aos": "flip-up"
       }, _react.default.createElement("p", null, "\"As far as the future is concerned, it is not a question of predicting it, but of making it possible.\"")), _react.default.createElement("div", {
         className: "footer-info"
       }, _react.default.createElement(_reactScroll.Link, {
@@ -39213,8 +39217,8 @@ function (_React$Component) {
   }
 
   _createClass(App, [{
-    key: "componentWillMount",
-    value: function componentWillMount() {
+    key: "componentDidMount",
+    value: function componentDidMount() {
       this.setState({
         loading: false
       });
@@ -39301,7 +39305,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33611" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45435" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
