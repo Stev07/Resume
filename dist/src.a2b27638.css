@@ -766,11 +766,5 @@ header nav li a:hover {
 .form form .form-submit input:hover {
   background: #46a4d7;
 }
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 
 /*# sourceMappingURL=/src.a2b27638.css.map */
