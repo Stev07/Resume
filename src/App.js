@@ -5,14 +5,31 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Works from "./Components/Works";
 import Contact from "./Components/Contact";
+import Loading from "./Components/Loading";
 import bg from "../docs/gleb-kozenko-262687-unsplash-ConvertImage.63a1e498.jpg";
 import { Parallax } from "react-parallax";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { loading: true };
+  }
+
+  componentWillMount(){
+    this.setState({
+      loading: false
+    })
+  }
+
   render() {
+
+    if (this.state.loading) {
+      return <Loading />;
+    }
     window.onscroll = () => {
       scrollFunction();
-      document.querySelector(".parallax-bg").style.opacity = 1 - +window.pageYOffset / 550 + "";
+      document.querySelector(".parallax-bg").style.opacity =
+        1 - +window.pageYOffset / 550 + "";
     };
 
     const scrollFunction = () => {
@@ -31,7 +48,7 @@ class App extends React.Component {
     return (
       <div id="main">
         <div id="hello">
-        <Navigation />
+          <Navigation />
           <Parallax
             bgImage={bg}
             strength={500}
