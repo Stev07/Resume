@@ -5,13 +5,14 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Works from "./Components/Works";
 import Contact from "./Components/Contact";
+import bg from "../docs/gleb-kozenko-262687-unsplash-ConvertImage.63a1e498.jpg";
+import { Parallax } from "react-parallax";
 
 class App extends React.Component {
-
-
   render() {
     window.onscroll = () => {
       scrollFunction();
+      document.querySelector(".parallax-bg").style.opacity = 1 - +window.pageYOffset / 550 + "";
     };
 
     const scrollFunction = () => {
@@ -25,13 +26,20 @@ class App extends React.Component {
         document.querySelector("nav").style.background = "transparent";
         document.querySelector("header").style.height = "12vh";
       }
-    }
+    };
 
     return (
       <div id="main">
         <div id="hello">
-          <Navigation />
-          <Hello />
+        <Navigation />
+          <Parallax
+            bgImage={bg}
+            strength={500}
+            className="parallax-bg"
+            bgClassName="hello-bg"
+          >
+            <Hello />
+          </Parallax>
         </div>
         <About />
         <Resume />

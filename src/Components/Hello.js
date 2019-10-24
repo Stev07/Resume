@@ -3,23 +3,33 @@ import "../scss/hello.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 class Hello extends React.Component {
+
   render() {
+
+    window.onscroll = () => {
+      document.querySelector(".parallax-bg").style.opacity = 1 - +window.pageYOffset / 550 + "";
+      
+      for (let i = 0 ; i < document.getElementsByClassName('hello-textExtend').length ; i ++){
+        document.getElementsByClassName('hello-textExtend')[i].style.letterSpacing = window.pageYOffset /100 + 'px';
+      }
+    };
+
     return (
       <div className="content">
         <div className="infoBox">
           <div className="hello-name">
             <h1>
-              <span className="developer">I am</span> Steve Dossin
+              <span className="developer hello-textExtend">I am</span> <span className="hello-textExtend">Steve Dossin</span>
             </h1>
           </div>
           <div className="hello-dev">
             <h2>
-              Junior Web <span className="developer">Developer</span>
+              <span className="hello-textExtend">Junior Web</span> <span className="developer hello-textExtend">Developer</span>
             </h2>
           </div>
           <div>
             <p>
-              Fullstack Junior Web Developer is seeking an opportunity to extend my web development and multimedia editing skills and knowledge.
+              Fullstack Junior Web Developer is looking for an opportunity to extend my web development and multimedia editing skills and knowledge.
             </p>
           </div>
           <div className="separate" />
@@ -42,7 +52,7 @@ class Hello extends React.Component {
             spy={true}
             smooth={true}
             offset={0}
-            duration={800}
+            duration={1000}
           >
             <a href="#about">
               <i className="fas fa-chevron-circle-down" />
