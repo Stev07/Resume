@@ -9,4 +9,9 @@
     background: black;
     overflow: hidden;
   }
+
+  a:focus
+{
+outline:0;
+} 
 }
