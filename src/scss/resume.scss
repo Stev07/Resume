@@ -2,7 +2,7 @@
   height: 150vh;
   background: white;
   font-family: "Montserrat", sans-serif;
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 772px) {
     height: 200vh;
   }
 
@@ -12,6 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background:rgba(0, 0, 0, 0) url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png") repeat scroll 0% 0%;
+    color: rgba(0, 0, 0, 0.8);
 
     @media screen and (max-width: 576px) {
       height: 50vh;
@@ -100,6 +102,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background:rgba(0, 0, 0, 0) url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png") repeat scroll 0% 0%;
+    color: rgba(0, 0, 0, 0.8);
 
     @media screen and (max-width: 576px) {
       height: 50vh;
@@ -186,7 +190,7 @@
   }
 
   #skills {
-    height: 60vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,22 +204,23 @@
       width: 100%;
       display: grid;
       grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr ;
       align-items: center;
       transition: 4s;
 
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 772px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         justify-content: center;
         text-align: center;
+        height: 100vh;
       }
 
       > * {
         width: 40%;
         margin: 0 auto;
 
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 772px) {
           width: 90%;
         }
       }
@@ -223,7 +228,7 @@
       .skills-html {
         grid-column: 2;
         grid-row: 1;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 772px) {
           grid-column: 1;
           grid-row: 1;
         }
@@ -231,7 +236,7 @@
       .skills-css {
         grid-column: 3;
         grid-row: 1;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 772px) {
           grid-column: 2;
           grid-row: 1;
         }
@@ -239,7 +244,7 @@
       .skills-js {
         grid-column: 4;
         grid-row: 1;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 772px) {
           grid-column: 3;
           grid-row: 1;
         }
@@ -247,7 +252,7 @@
       .skills-react {
         grid-column: 5;
         grid-row: 1;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 772px) {
           grid-column: 4;
           grid-row: 1;
         }
@@ -255,7 +260,7 @@
       .skills-node {
         grid-column: 6;
         grid-row: 1;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 772px) {
           grid-column: 1;
           grid-row: 2;
         }
@@ -263,7 +268,7 @@
       .skills-vue {
         grid-column: 2;
         grid-row: 2;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 772px) {
           grid-column: 2;
           grid-row: 2;
         }
@@ -271,7 +276,7 @@
       .skills-mysql {
         grid-column: 4;
         grid-row: 2;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 772px) {
           grid-column: 3;
           grid-row: 2;
         }
@@ -279,7 +284,7 @@
       .skills-mongo {
         grid-column: 3;
         grid-row: 2;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 772px) {
           grid-column: 4;
           grid-row: 2;
         }
@@ -287,7 +292,7 @@
       .skills-sass {
         grid-column: 5;
         grid-row: 2;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 772px) {
           grid-column: 2;
           grid-row: 3;
         }
@@ -295,7 +300,7 @@
       .skills-git {
         grid-column: 6;
         grid-row: 2;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 772px) {
           grid-column: 3;
           grid-row: 3;
         }

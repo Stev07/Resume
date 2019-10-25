@@ -34917,7 +34917,7 @@ function (_React$Component) {
         href: "#"
       }, "RESUME"))), _react.default.createElement(_reactScroll.Link, {
         activeClass: "active",
-        to: "skills",
+        to: "works",
         spy: true,
         smooth: true,
         offset: 0,
@@ -35812,7 +35812,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42455" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46117" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
