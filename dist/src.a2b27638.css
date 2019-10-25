@@ -174,7 +174,7 @@ header nav li a:hover {
 }
 @media screen and (max-width: 772px) {
   #about {
-    height: 150vh;
+    height: 100vh;
   }
 }
 #about .about {
@@ -244,127 +244,205 @@ header nav li a:hover {
 @media screen and (max-width: 772px) {
   #about .about .about-me .about-me-about {
     width: 85%;
+    padding-right: 0;
   }
 }
 #about .about .about-me .about-me-details {
   width: 100%;
 }
-#about .education {
-  height: 50vh;
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
-  grid-template-rows: 45% 45% 10%;
-  align-items: center;
-  line-height: 30px;
-}
-@media screen and (max-width: 576px) {
-  #about .education {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 0 auto;
-  }
-}
-#about .education .education-title {
-  grid-column: 2;
-  grid-row: 1;
-}
-@media screen and (max-width: 576px) {
-  #about .education .education-title {
-    width: 100%;
-    text-align: center;
-    grid-row: 1;
-    padding-top: 20px;
-  }
-}
-#about .education .education-item1 {
-  grid-column: 3;
-  grid-row: 1;
-}
-@media screen and (max-width: 576px) {
-  #about .education .education-item1 p {
-    display: none;
-  }
-}
-#about .education .education-item2 {
-  grid-column: 3;
-  grid-row: 2;
-}
-@media screen and (max-width: 576px) {
-  #about .education .education-item2 {
-    text-align: center;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 576px) {
-  #about .education .education-item2 p {
-    display: none;
-  }
-}
-#about .education .separate {
-  grid-row: 3;
-  grid-column: 2/4;
-  width: 100%;
-  height: 1px;
-  background: lightgrey;
-  margin: 0 auto;
-}
 #resume {
-  width: 100vw;
-  height: 100vh;
+  height: 150vh;
   background: white;
   font-family: "Montserrat", sans-serif;
 }
 @media screen and (max-width: 576px) {
   #resume {
-    height: 150vh;
+    height: 200vh;
   }
 }
-#resume .resume {
-  height: 50%;
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
-  grid-template-rows: 45% 45% 10%;
+#resume .education {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  line-height: 30px;
+  background: rgba(0, 0, 0, 0) url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png") repeat scroll 0% 0%;
+  color: rgba(0, 0, 0, 0.8);
+}
+@media screen and (max-width: 576px) {
+  #resume .education {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 772px) {
+  #resume .education {
+    flex-direction: column;
+  }
+}
+#resume .education .education-items {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-right: 30px;
+}
+@media screen and (min-width: 772px) {
+  #resume .education .education-items {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #resume .education .education-items {
+    height: 50vh;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 772px) {
+  #resume .education .education-items {
+    height: 50vh;
+    width: 95%;
+  }
+}
+#resume .education .education-title {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 772px) {
+  #resume .education .education-title {
+    border-right: 1px solid black;
+    height: 80%;
+  }
+}
+@media screen and (max-width: 772px) {
+  #resume .education .education-title {
+    width: 100%;
+    padding-top: 10vh;
+    height: 5%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 772px) {
+  #resume .education .education-title {
+    justify-content: flex-end;
+    padding-right: 20vh;
+  }
+}
+#resume .education .education-item1,
+#resume .education .education-item2 {
+  width: 100%;
+}
+@media screen and (max-width: 576px) {
+  #resume .education .education-item1,
+#resume .education .education-item2 {
+    align-self: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  #resume .education .education-item1 p,
+#resume .education .education-item2 p {
+    display: none;
+    text-align: center;
+  }
+}
+#resume .education .separate {
+  width: 100%;
+  height: 1px;
+  background: lightgrey;
+  margin: 30px;
+}
+#resume .resume {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0) url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png") repeat scroll 0% 0%;
+  color: rgba(0, 0, 0, 0.8);
 }
 @media screen and (max-width: 576px) {
   #resume .resume {
-    height: 34%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: center;
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 772px) {
+  #resume .resume {
+    flex-direction: column;
   }
 }
 #resume .resume .resume-title {
-  grid-column: 2;
-  grid-row: 1;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 772px) {
+  #resume .resume .resume-title {
+    border-right: 1px solid black;
+    height: 80%;
+  }
+}
+@media screen and (max-width: 772px) {
   #resume .resume .resume-title {
     width: 100%;
     text-align: center;
-    grid-row: 1;
+    padding-top: 10vh;
+    height: 5%;
   }
 }
-#resume .resume .resume-item1 {
-  grid-column: 3;
-  grid-row: 1;
+@media screen and (min-width: 576px) and (max-width: 772px) {
+  #resume .resume .resume-title {
+    justify-content: flex-end;
+    padding-right: 20vh;
+  }
+}
+#resume .resume .resume-items {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-right: 30px;
+}
+@media screen and (min-width: 772px) {
+  #resume .resume .resume-items {
+    padding-left: 10px;
+  }
 }
 @media screen and (max-width: 576px) {
-  #resume .resume .resume-item1 p {
-    display: none;
+  #resume .resume .resume-items {
+    height: 50vh;
+    padding-right: 0;
   }
 }
+@media screen and (max-width: 772px) {
+  #resume .resume .resume-items {
+    height: 50vh;
+    width: 95%;
+  }
+}
+#resume .resume .resume-item1,
 #resume .resume .resume-item2 {
-  grid-column: 3;
-  grid-row: 2;
+  width: 100%;
 }
 @media screen and (max-width: 576px) {
-  #resume .resume .resume-item2 p {
+  #resume .resume .resume-item1,
+#resume .resume .resume-item2 {
+    align-self: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  #resume .resume .resume-item1 p,
+#resume .resume .resume-item2 p {
     display: none;
+    text-align: center;
   }
 }
 #resume .resume .separate {
@@ -376,14 +454,15 @@ header nav li a:hover {
   margin: 0 auto;
 }
 #resume #skills {
-  height: 80%;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 @media screen and (max-width: 576px) {
   #resume #skills {
-    height: 66%;
+    height: 100vh;
   }
 }
 #resume #skills .skills-box {
@@ -391,7 +470,7 @@ header nav li a:hover {
   width: 100%;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
   transition: 4s;
 }

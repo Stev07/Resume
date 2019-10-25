@@ -3,19 +3,18 @@ import "../scss/resume.scss";
 
 class Resume extends React.Component {
   render() {
-
-
     return (
       <div id="resume">
-        <section id="resume" className="resume">
-          <div className="resume-title" data-aos="fade-left">
-            <p>WORKS</p>
+        <section id="education" className="education">
+          <div className="education-title">
+            <p>EDUCATION</p>
           </div>
-          <div className="resume-item1" data-aos="fade-left">
+          <div className="education-items">
+            <div className="education-item1">
             <h3>Junior Web Developer</h3>
             <h5>
               <em>Becode | Oct 2018 - Mai 2019</em>
-            </h5>
+            </h5><br />
             <p>
               Intensive 7 months coding training completed by 3-months
               internship: -Active learning; -Achieving individual and group
@@ -23,7 +22,36 @@ class Resume extends React.Component {
               methodologies; -Pair/group programming; -Watch presentation
             </p>
           </div>
-          <div className="resume-item2" data-aos="fade-left" data-aos-offset="-50">
+          <div className="education-item2">
+            <h3>Accounting technician</h3>
+            <h3>Certificate relating to basic management knowledge</h3>
+            <h5>
+              <em>Saint-Lambert Herstal | 2013</em>
+            </h5>
+          </div>
+          </div>
+
+        </section>
+
+        <div className="separate" />
+
+        <section id="resume" className="resume">
+          <div className="resume-title">
+            <p>WORKS</p>
+          </div>
+          <div className="resume-items">
+            <div className="resume-item1">
+            <h3>System Developer</h3>
+            <h5>
+              <em>NSI IT Software & Services | May 2019 - Aug 2019</em>
+            </h5>
+            <p>
+              
+            </p>
+          </div>
+          <div
+            className="resume-item2"
+          >
             <h3>Manager-Assistant</h3>
             <h5>
               <em>Lidl | Jan 2015 - Mar 2018</em>
@@ -34,8 +62,11 @@ class Resume extends React.Component {
               activities.
             </p>
           </div>
-          <div className="separate" />
+          </div>
+          
         </section>
+
+        <div className="separate" />
 
         <section id="skills">
           <div className="skills-box">
