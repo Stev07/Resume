@@ -10,9 +10,11 @@ import { Parallax } from "react-parallax";
 
 class App extends React.Component {
   render() {
+
     window.onscroll = () => {
       scrollFunction();
-      document.querySelector(".parallax-bg").style.opacity = 1 - +window.pageYOffset / 550 + "";
+      document.querySelector(".parallax-bg").style.opacity =
+        1 - +window.pageYOffset / 550 + "";
     };
 
     const scrollFunction = () => {
@@ -31,7 +33,7 @@ class App extends React.Component {
     return (
       <div id="main">
         <div id="hello">
-        <Navigation />
+          <Navigation />
           <Parallax
             bgImage={bg}
             strength={500}

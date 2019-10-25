@@ -89,4 +89,4 @@ var e;!function(t,n){"object"==typeof exports&&"object"==typeof module?module.ex
 },{"react":"HdMw","./Components/Navigation":"jUTK","./Components/Hello":"tNGb","./Components/About":"FMoL","./Components/Resume":"WatO","./Components/Works":"E7EU","./Components/Contact":"sldd","../docs/gleb-kozenko-262687-unsplash-ConvertImage.63a1e498.jpg":"N6UA","react-parallax":"UHhf"}],"H99C":[function(require,module,exports) {
 "use strict";var e=u(require("react")),r=u(require("react-dom"));require("./scss/index.scss");var t=u(require("./App"));function u(e){return e&&e.__esModule?e:{default:e}}r.default.render(e.default.createElement(t.default,null),document.getElementById("app"));
 },{"react":"HdMw","react-dom":"X9zx","./scss/index.scss":"HYMH","./App":"FLHj"}]},{},["H99C"], null)
-//# sourceMappingURL=src.1dbbc15f.js.map
+//# sourceMappingURL=src.3c777fe3.js.map
