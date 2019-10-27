@@ -1,5 +1,5 @@
 .form {
-  width: 100%;
+  width: 100vw;
   height: 50%;
 
   input {
@@ -8,7 +8,17 @@
     -moz-border-radius: 10px;
     border-radius: 10px;
     padding-left: 10px;
-    
+    background: transparent;
+    color: white;
+    border: 0;
+    border-bottom: 1px solid #46a4d7;
+    font-family: sans-serif;
+    width: 70%;
+
+    &:focus {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
     @media screen and (max-width: 576px) {
       height: 25px;
     }
@@ -29,11 +39,9 @@
     .form-name,
     .form-email,
     .form-subject,
-    .form-message,
-    .form-submit,
-    textarea {
+    .form-message {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
     }
 
@@ -90,6 +98,14 @@
         border-radius: 10px;
         padding-top: 10px;
         padding-left: 10px;
+        background: transparent;
+        color: white;
+        font-family: sans-serif;
+        border: 0.5px solid #46a4d7;
+
+        &:focus {
+          background: rgba(0, 0, 0, 0.5);
+        }
 
         @media screen and (max-width: 576px) {
           height: 80px;
@@ -99,30 +115,37 @@
     .form-submit {
       grid-column: 2/4;
       grid-row: 4;
+      margin: 0 auto;
+      width: 80%;
+      text-align: center;
 
       @media screen and (max-width: 576px) {
         grid-column: 2;
         grid-row: 5;
         padding-top: 10px;
+        margin-top: 20px;
       }
 
       input {
-        background:white;
+        background: white;
+        color: #46a4d7;
         margin-top: 40px;
-        width: 200px;
+        width: 30%;
         height: 40px;
         border: 0px;
-        -webkit-border-radius: 0px;
-        -moz-border-radius: 0px;
-        border-radius: 0px;
+        border-radius: 20px;
+        transition: 0.5s ease;
+        text-transform: uppercase;
+        padding-left: 0;
 
         @media screen and (max-width: 576px) {
-          width: 100%;
+          width: 80%;
           margin-top: 0;
         }
 
         &:hover {
           background: #46a4d7;
+          color: white;
         }
       }
     }

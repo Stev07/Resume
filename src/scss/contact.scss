@@ -1,26 +1,33 @@
 #contact {
   width: 100vw;
   height: 100vh;
-  background: #191919;
+  background-image: linear-gradient(rgba(18, 63, 87, 0.8),rgba(0, 0, 0, 0.5)), url("../img/jaime-lopes-eY1x1epA24g-unsplash.jpg");
+  background-size: cover;
   font-family: 'Montserrat', sans-serif;
 
+  
   .contactme {
     color: white;
     text-align: center;
     padding-top: 50px;
+    font-size: 1.2rem;
+
   }
 
   .contact-me, .contact-avaible{
     font-weight: bold;
     color:#46a4d7;
+    font-size: 1.4rem;
   }
 
   footer {
-    height: 50%;
+    height: 45%;
     position: relative;
     text-align: center;
 
     .citation {
+      width: 100%;
+      padding: 0 5px;
       color: white;
       font-style: italic;
       font-family:sans-serif !important;

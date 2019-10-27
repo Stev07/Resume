@@ -314,7 +314,7 @@ header nav li a:hover {
 }
 @media screen and (min-width: 772px) {
   #resume .education .education-title {
-    border-right: 1px solid black;
+    border-right: 1px solid #46a4d7;
     height: 80%;
   }
 }
@@ -384,7 +384,7 @@ header nav li a:hover {
 }
 @media screen and (min-width: 772px) {
   #resume .resume .resume-title {
-    border-right: 1px solid black;
+    border-right: 1px solid #46a4d7;
     height: 80%;
   }
 }
@@ -604,9 +604,11 @@ header nav li a:hover {
   align-items: center;
   min-height: 50vh;
 }
-@media screen and (max-width: 772px) {
+@media screen and (max-width: 576px) {
   #works {
-    min-height: 100vh;
+    min-height: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 #works .works-container {
@@ -691,24 +693,29 @@ header nav li a:hover {
 #contact {
   width: 100vw;
   height: 100vh;
-  background: #191919;
+  background-image: linear-gradient(rgba(18, 63, 87, 0.8), rgba(0, 0, 0, 0.5)), url("/jaime-lopes-eY1x1epA24g-unsplash.740ac090.jpg");
+  background-size: cover;
   font-family: "Montserrat", sans-serif;
 }
 #contact .contactme {
   color: white;
   text-align: center;
   padding-top: 50px;
+  font-size: 1.2rem;
 }
 #contact .contact-me, #contact .contact-avaible {
   font-weight: bold;
   color: #46a4d7;
+  font-size: 1.4rem;
 }
 #contact footer {
-  height: 50%;
+  height: 45%;
   position: relative;
   text-align: center;
 }
 #contact footer .citation {
+  width: 100%;
+  padding: 0 5px;
   color: white;
   font-style: italic;
   font-family: sans-serif !important;
@@ -767,7 +774,7 @@ header nav li a:hover {
   padding-top: 25px;
 }
 .form {
-  width: 100%;
+  width: 100vw;
   height: 50%;
 }
 .form input {
@@ -776,6 +783,15 @@ header nav li a:hover {
   -moz-border-radius: 10px;
   border-radius: 10px;
   padding-left: 10px;
+  background: transparent;
+  color: white;
+  border: 0;
+  border-bottom: 1px solid #46a4d7;
+  font-family: sans-serif;
+  width: 70%;
+}
+.form input:focus {
+  background: rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 576px) {
   .form input {
@@ -799,11 +815,9 @@ header nav li a:hover {
 .form form .form-name,
 .form form .form-email,
 .form form .form-subject,
-.form form .form-message,
-.form form .form-submit,
-.form form textarea {
+.form form .form-message {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .form form .form-name {
@@ -861,6 +875,13 @@ header nav li a:hover {
   border-radius: 10px;
   padding-top: 10px;
   padding-left: 10px;
+  background: transparent;
+  color: white;
+  font-family: sans-serif;
+  border: 0.5px solid #46a4d7;
+}
+.form form .form-message textarea:focus {
+  background: rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 576px) {
   .form form .form-message textarea {
@@ -870,32 +891,39 @@ header nav li a:hover {
 .form form .form-submit {
   grid-column: 2/4;
   grid-row: 4;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
 }
 @media screen and (max-width: 576px) {
   .form form .form-submit {
     grid-column: 2;
     grid-row: 5;
     padding-top: 10px;
+    margin-top: 20px;
   }
 }
 .form form .form-submit input {
   background: white;
+  color: #46a4d7;
   margin-top: 40px;
-  width: 200px;
+  width: 30%;
   height: 40px;
   border: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
+  border-radius: 20px;
+  transition: 0.5s ease;
+  text-transform: uppercase;
+  padding-left: 0;
 }
 @media screen and (max-width: 576px) {
   .form form .form-submit input {
-    width: 100%;
+    width: 80%;
     margin-top: 0;
   }
 }
 .form form .form-submit input:hover {
   background: #46a4d7;
+  color: white;
 }
 
 /*# sourceMappingURL=/src.a2b27638.css.map */

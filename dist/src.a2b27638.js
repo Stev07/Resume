@@ -35492,7 +35492,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scss/form.scss":[function(require,module,exports) {
+},{"./../img/jaime-lopes-eY1x1epA24g-unsplash.jpg":[["jaime-lopes-eY1x1epA24g-unsplash.740ac090.jpg","src/img/jaime-lopes-eY1x1epA24g-unsplash.jpg"],"src/img/jaime-lopes-eY1x1epA24g-unsplash.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/scss/form.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -35644,8 +35644,7 @@ function (_React$Component) {
       }, "contact me"), "!", _react.default.createElement("br", null), "I'm ", _react.default.createElement("span", {
         className: "contact-avaible"
       }, "available"), " for any contract/project.")), _react.default.createElement(_Form.default, null), _react.default.createElement("footer", null, _react.default.createElement("div", {
-        className: "citation",
-        "data-aos": "flip-up"
+        className: "citation"
       }, _react.default.createElement("p", null, "\"As far as the future is concerned, it is not a question of predicting it, but of making it possible.\"")), _react.default.createElement("div", {
         className: "footer-info"
       }, _react.default.createElement(_reactScroll.Link, {
@@ -35828,7 +35827,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45929" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41873" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
