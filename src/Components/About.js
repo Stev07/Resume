@@ -28,25 +28,6 @@ class About extends React.Component {
             </div>
           </div>
         </section>
-
-        <section id="education" className="education">
-          <div className="education-title">
-            <p>EDUCATION</p>
-          </div>
-          <div className="education-item1">
-            <h3>Certificate relating to basic management knowledge</h3>
-            <h5>
-              <em>Saint-Lambert Herstal | 2013</em>
-            </h5>
-          </div>
-          <div className="education-item2">
-            <h3>Accounting technician</h3>
-            <h5>
-              <em>Saint-Lambert Herstal | 2013</em>
-            </h5>
-          </div>
-          <div className="separate" />
-        </section>
       </div>
     );
   }

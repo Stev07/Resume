@@ -1,59 +1,180 @@
 #resume {
-  width: 100vw;
-  height: 100vh;
+  height: 150vh;
   background: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   @media screen and (max-width: 576px) {
-    height: 150vh;
+    height: 200vh;
   }
 
-  .resume {
-    height: 50%;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
-    grid-template-rows: 45% 45% 10%;
+  .education {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    line-height: 30px;
+    background:rgba(0, 0, 0, 0) url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png") repeat scroll 0% 0%;
+    color: rgba(0, 0, 0, 0.8);
 
     @media screen and (max-width: 576px) {
-      height: 34%;
-      display: flex;
-      flex-wrap: wrap;
-      text-align: center;
-      margin: 0 auto;
-      justify-content: center;
+      height: 50vh;
     }
 
-    .resume-title {
-      grid-column: 2;
-      grid-row: 1;
+    @media screen and (max-width: 772px) {
+      flex-direction: column;
+    }
+
+    .education-items {
+      width: 75%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-right: 30px;
+
+      @media screen and (min-width: 772px) {
+        padding-left: 10px;
+      }
+
       @media screen and (max-width: 576px) {
-        width: 100%;
-        text-align: center;
-        grid-row:1;
-        
+        height: 50vh;
+        padding-right: 0;
+      }
+
+      @media screen and (max-width: 772px) {
+        height: 50vh;
+        width: 95%;
       }
     }
 
-    .resume-item1 {
-      grid-column: 3;
-      grid-row: 1;
-      
-      p{
+    .education-title {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+
+      @media screen and (min-width: 772px) {
+        border-right: 1px solid black;
+        height: 80%;
+      }
+
+      @media screen and (max-width: 772px) {
+        width: 100%;
+        padding-top: 10vh;
+        height: 5%;
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 772px) {
+        justify-content: flex-end;
+        padding-right: 20vh;
+      }
+    }
+
+    .education-item1,
+    .education-item2 {
+      width: 100%;
+
+      @media screen and (max-width: 576px) {
+        align-self: center;
+        text-align: center;
+      }
+
+      p {
         @media screen and (max-width: 576px) {
           display: none;
-          
+          text-align: center;
         }
       }
     }
 
-    .resume-item2 {
-      grid-column: 3;
-      grid-row: 2;
+    .separate {
+      width: 100%;
+      height: 1px;
+      background: lightgrey;
+      margin: 30px;
+    }
+  }
 
-      p{
+  .resume {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0, 0, 0, 0) url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png") repeat scroll 0% 0%;
+    color: rgba(0, 0, 0, 0.8);
+
+    @media screen and (max-width: 576px) {
+      height: 50vh;
+    }
+
+    @media screen and (max-width: 772px) {
+      flex-direction: column;
+    }
+
+    .resume-title {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+
+      @media screen and (min-width: 772px) {
+        border-right: 1px solid black;
+        height: 80%;
+      }
+
+      @media screen and (max-width: 772px) {
+        width: 100%;
+        text-align: center;
+        padding-top: 10vh;
+        height: 5%;
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 772px) {
+        justify-content: flex-end;
+        padding-right: 20vh;
+      }
+    }
+
+    .resume-items {
+      width: 75%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-right: 30px;
+
+      @media screen and (min-width: 772px) {
+        padding-left: 10px;
+      }
+
+      @media screen and (max-width: 576px) {
+        height: 50vh;
+        padding-right: 0;
+      }
+
+      @media screen and (max-width: 772px) {
+        height: 50vh;
+        width: 95%;
+      }
+    }
+
+    .resume-item1,
+    .resume-item2 {
+      width: 100%;
+
+      @media screen and (max-width: 576px) {
+        align-self: center;
+        text-align: center;
+      }
+
+      p {
         @media screen and (max-width: 576px) {
           display: none;
+          text-align: center;
         }
       }
     }
@@ -69,13 +190,13 @@
   }
 
   #skills {
-    height: 80%;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     @media screen and (max-width: 576px) {
-      height: 66%;
-      
+      height: 100vh;
     }
 
     .skills-box {
@@ -83,11 +204,9 @@
       width: 100%;
       display: grid;
       grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr ;
       align-items: center;
       transition: 4s;
-
-
 
       @media screen and (max-width: 576px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -97,11 +216,11 @@
       }
 
       > * {
-        width:40%;
+        width: 40%;
         margin: 0 auto;
 
         @media screen and (max-width: 576px) {
-          width:90%;
+          width: 90%;
         }
       }
 
