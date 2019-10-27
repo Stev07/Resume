@@ -11,7 +11,10 @@ class Works extends React.Component {
       <div id="works">
         <div className="works-container">
           <div className="box">
-            <a target="_blank" href="https://github.com/Stev07/React_Pomodoro/tree/master">
+            <a
+              target="_blank"
+              href="https://github.com/Stev07/React_Pomodoro/tree/master"
+            >
               <div className="imgBx">
                 <img src={pomodoro} alt="project" />
               </div>
