@@ -35429,40 +35429,72 @@ function (_React$Component) {
       return _react.default.createElement("div", {
         id: "works"
       }, _react.default.createElement("div", {
-        className: "works-box"
+        className: "works-container"
       }, _react.default.createElement("div", {
-        className: "works-item"
+        className: "box"
       }, _react.default.createElement("a", {
         target: "_blank",
         href: "https://stev07.github.io/React_Pomodoro/"
+      }, _react.default.createElement("div", {
+        className: "imgBx"
       }, _react.default.createElement("img", {
         src: _pomodoroConvertImage.default,
-        className: "pomodoro"
-      }))), _react.default.createElement("div", {
-        className: "works-item"
+        alt: "project"
+      })), _react.default.createElement("div", {
+        className: "layer layer1"
+      }), _react.default.createElement("div", {
+        className: "layer layer2"
+      }), _react.default.createElement("div", {
+        className: "contentBx"
+      }, _react.default.createElement("div", null, _react.default.createElement("h3", null, "Pomodoro"), _react.default.createElement("br", null), _react.default.createElement("ul", null, _react.default.createElement("li", null, "React"), _react.default.createElement("li", null, "Javascript")))))), _react.default.createElement("div", {
+        className: "box"
       }, _react.default.createElement("a", {
         target: "_blank",
         href: "https://github.com/Stev07/Bookshelf/tree/develop"
+      }, _react.default.createElement("div", {
+        className: "imgBx"
       }, _react.default.createElement("img", {
         src: _bookshelf.default,
-        className: "bookshelf"
-      }))), _react.default.createElement("div", {
-        className: "works-item"
+        alt: "project"
+      })), _react.default.createElement("div", {
+        className: "layer layer1"
+      }), _react.default.createElement("div", {
+        className: "layer layer2"
+      }), _react.default.createElement("div", {
+        className: "contentBx"
+      }, _react.default.createElement("div", null, _react.default.createElement("h3", null, "BookShelf"), _react.default.createElement("br", null), _react.default.createElement("ul", null, _react.default.createElement("li", null, "React"), _react.default.createElement("li", null, "Node.js"), _react.default.createElement("li", null, "MongoDB")))))), _react.default.createElement("div", {
+        className: "box"
       }, _react.default.createElement("a", {
         target: "_blank",
-        href: "http://www.visagesetcouleurs.be"
+        href: "https://www.visagesetcouleurs.be"
+      }, _react.default.createElement("div", {
+        className: "imgBx"
       }, _react.default.createElement("img", {
         src: _visages.default,
-        className: "bookshelf"
-      }))), _react.default.createElement("div", {
-        className: "works-item"
+        alt: "project"
+      })), _react.default.createElement("div", {
+        className: "layer layer1"
+      }), _react.default.createElement("div", {
+        className: "layer layer2"
+      }), _react.default.createElement("div", {
+        className: "contentBx"
+      }, _react.default.createElement("div", null, _react.default.createElement("h3", null, "Headless CMS"), _react.default.createElement("br", null), _react.default.createElement("ul", null, _react.default.createElement("li", null, "React"), _react.default.createElement("li", null, "Wordpress"), _react.default.createElement("li", null, "Javascript")))))), _react.default.createElement("div", {
+        className: "box"
       }, _react.default.createElement("a", {
         target: "_blank",
         href: "https://github.com/Stev07/php-messenger"
+      }, _react.default.createElement("div", {
+        className: "imgBx"
       }, _react.default.createElement("img", {
         src: _messenger.default,
-        className: "pomodoro"
-      })))));
+        alt: "project"
+      })), _react.default.createElement("div", {
+        className: "layer layer1"
+      }), _react.default.createElement("div", {
+        className: "layer layer2"
+      }), _react.default.createElement("div", {
+        className: "contentBx"
+      }, _react.default.createElement("div", null, _react.default.createElement("h3", null, "PHP Messenger"), _react.default.createElement("br", null), _react.default.createElement("ul", null, _react.default.createElement("li", null, "HTML"), _react.default.createElement("li", null, "Css"), _react.default.createElement("li", null, "Php"), _react.default.createElement("li", null, "Mysql"))))))));
     }
   }]);
 
@@ -35812,7 +35844,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43277" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44383" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
