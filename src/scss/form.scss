@@ -1,6 +1,6 @@
 .form {
   width: 100vw;
-  height: 50%;
+  height: auto;
 
   input {
     height: 40px;
@@ -14,6 +14,7 @@
     border-bottom: 1px solid #46a4d7;
     font-family: sans-serif;
     width: 70%;
+    max-width: 500px;
 
     &:focus {
       background: rgba(0, 0, 0, 0.5);
@@ -24,11 +25,10 @@
     }
   }
   form {
-    height: 60%;
+    height: 80%;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr 0.5fr;
-    padding-top: 45px;
 
     @media screen and (max-width: 576px) {
       display: grid;
@@ -92,6 +92,7 @@
 
       textarea {
         width: 100%;
+        max-width: 700px;
         height: 150px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -146,6 +147,7 @@
         &:hover {
           background: #46a4d7;
           color: white;
+          font-weight: bold;
         }
       }
     }
