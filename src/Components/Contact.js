@@ -43,7 +43,7 @@ class Contact extends React.Component {
               </div>
               <p className="made">
                 Made with <i className="fas fa-heart" /> by{" "}
-                <strong>Steve D.</strong>
+                <strong><a href="mailto:steve.dossin@gmail.com">Steve Dossin</a></strong>
               </p>
             </div>
           </footer>

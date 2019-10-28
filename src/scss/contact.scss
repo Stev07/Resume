@@ -1,26 +1,26 @@
 #contact {
   width: 100vw;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(18, 63, 87, 0.8),rgba(0, 0, 0, 0.5)), url("../img/jaime-lopes-eY1x1epA24g-unsplash.jpg");
+  background-image: linear-gradient(rgba(18, 63, 87, 0.8), rgba(0, 0, 0, 0.5)),
+    url("../img/jaime-lopes-eY1x1epA24g-unsplash.jpg");
   background-size: cover;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
 
-  
   .contactme {
     color: white;
     text-align: center;
     font-size: 1.2rem;
     margin-top: 50px;
-
   }
 
-  .contact-me, .contact-avaible{
+  .contact-me,
+  .contact-avaible {
     font-weight: bold;
-    color:#46a4d7;
+    color: #46a4d7;
     font-size: 1.4rem;
   }
 
@@ -36,7 +36,7 @@
       margin-bottom: 15px;
       color: white;
       font-style: italic;
-      font-family:sans-serif !important;
+      font-family: sans-serif !important;
 
       @media screen and (max-width: 576px) {
         font-size: 12px;
@@ -44,7 +44,7 @@
     }
 
     .footer-info {
-      background: rgba(0,0,0,0.6);
+      background: rgba(0, 0, 0, 0.7);
 
       .gotop {
         width: 100%;
@@ -84,6 +84,11 @@
         text-align: center;
         color: #525252;
         font-family: sans-serif;
+
+        a {
+          text-decoration: none;
+          color: #525252;
+        }
       }
     }
   }
