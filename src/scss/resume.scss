@@ -12,7 +12,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background:rgba(0, 0, 0, 0) url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png") repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0)
+      url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png")
+      repeat scroll 0% 0%;
     color: rgba(0, 0, 0, 0.8);
 
     @media screen and (max-width: 576px) {
@@ -102,7 +104,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background:rgba(0, 0, 0, 0) url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png") repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0)
+      url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png")
+      repeat scroll 0% 0%;
     color: rgba(0, 0, 0, 0.8);
 
     @media screen and (max-width: 576px) {
@@ -204,8 +208,8 @@
       height: 100%;
       width: 100%;
       display: grid;
-      grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-      grid-template-rows: 1fr 1fr ;
+      grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+      grid-template-rows: 1fr 1fr;
       align-items: center;
       transition: 4s;
 
@@ -254,46 +258,14 @@
         }
       }
       .skills-react {
-        grid-column: 5;
-        grid-row: 1;
-        @media screen and (max-width: 576px) {
-          grid-column: 4;
-          grid-row: 1;
-        }
-      }
-      .skills-node {
-        grid-column: 6;
-        grid-row: 1;
-        @media screen and (max-width: 576px) {
-          grid-column: 1;
-          grid-row: 2;
-        }
-      }
-      .skills-vue {
         grid-column: 2;
-        grid-row: 2;
-        @media screen and (max-width: 576px) {
-          grid-column: 2;
-          grid-row: 2;
-        }
-      }
-      .skills-mysql {
-        grid-column: 4;
         grid-row: 2;
         @media screen and (max-width: 576px) {
           grid-column: 3;
           grid-row: 2;
         }
       }
-      .skills-mongo {
-        grid-column: 3;
-        grid-row: 2;
-        @media screen and (max-width: 576px) {
-          grid-column: 4;
-          grid-row: 2;
-        }
-      }
-      .skills-sass {
+      .skills-node {
         grid-column: 5;
         grid-row: 2;
         @media screen and (max-width: 576px) {
@@ -301,11 +273,59 @@
           grid-row: 3;
         }
       }
-      .skills-git {
+      .skills-vue {
+        grid-column: 4;
+        grid-row: 2;
+        @media screen and (max-width: 576px) {
+          grid-column: 4;
+          grid-row: 2;
+        }
+      }
+      .skills-mysql {
+        grid-column: 7;
+        grid-row: 2;
+        @media screen and (max-width: 576px) {
+          grid-column: 4;
+          grid-row: 3;
+        }
+      }
+      .skills-php {
         grid-column: 6;
         grid-row: 2;
         @media screen and (max-width: 576px) {
           grid-column: 3;
+          grid-row: 3;
+        }
+      }
+      .skills-sass {
+        grid-column: 6;
+        grid-row: 1;
+        @media screen and (max-width: 576px) {
+          grid-column: 1;
+          grid-row: 2;
+        }
+      }
+      .skills-git {
+        grid-column: 7;
+        grid-row: 1;
+        @media screen and (max-width: 576px) {
+          grid-column: 2;
+          grid-row: 2;
+        }
+      }
+      .skills-bootstrap {
+        grid-column: 5;
+        grid-row: 1;
+        @media screen and (max-width: 576px) {
+          grid-column: 4;
+          grid-row: 1;
+        }
+      }
+      .skills-angular {
+        grid-column: 3;
+        grid-row: 2;
+        @media screen and (max-width: 576px) {
+          grid-column: 1;
           grid-row: 3;
         }
       }
