@@ -2,6 +2,57 @@ import React from "react";
 import "../scss/resume.scss";
 
 class Resume extends React.Component {
+  constructor(props) {
+    super(props);
+    this.controller = new ScrollMagic.Controller();
+    this.animResue = new TimelineLite();
+  }
+
+  componentDidMount() {
+    //ANIM DESKTIOP
+    this.checkClientWidth() > 771
+      ? (this.animResue.from(".education-item1", 0.8, { x: "+100vw" }),
+        this.animResue.from(".education-item2", 0.8, { x: "+100vw" }),
+        this.animResue.from(".resume-item1", 0.8, { x: "+100vw" }),
+        this.animResue.from(".resume-item2", 0.8, { x: "+100vw" }))
+      : //ANIM TABLET
+      this.checkClientWidth() > 576 && this.checkClientWidth() < 772
+      ? (this.animResue.from(".education-title", 1.3, { x: "-100vw" }, 0),
+        this.animResue.from(
+          ".resume-title",
+          1.3,
+          { x: "-100vw", opacity: 1 },
+          0
+        ))
+      : //ANIM MOBILE
+      this.checkClientWidth() < 577
+      ? (this.animResue.from(".education-title", 1.1, { x: "-100vw" }, 0),
+        this.animResue.from(".education-items", 1.3, { x: "+100vw" }, 0),
+        this.animResue.from(".resume-title", 1.1, { x: "-100vw" }, 0),
+        this.animResue.from(".resume-items", 1.3, { x: "+100vw" }, 0))
+      : null;
+
+    new ScrollMagic.Scene({
+      triggerElement: "#resume",
+      triggerHook: "onLeave",
+      ease: Back.easeOut.config(3),
+      // duration: 300, // scroll distance
+      offset: -300 // start this scene after scrolling for 50px
+    })
+      .setTween(this.animResue)
+      .addTo(this.controller); // assign the scene to the controller
+    // .addIndicators()
+    // .setPin(".about-me-about") // pins the element for the the scene's duration
+  }
+
+  checkClientWidth() {
+    let clientWidth =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+    return clientWidth;
+  }
+
   render() {
     return (
       <div id="resume">
@@ -11,26 +62,26 @@ class Resume extends React.Component {
           </div>
           <div className="education-items">
             <div className="education-item1">
-            <h3>Junior Web Developer</h3>
-            <h5>
-              <em>Becode | Oct 2018 - Mai 2019</em>
-            </h5><br />
-            <p>
-              Intensive 7 months coding training completed by 3-months
-              internship: -Active learning; -Achieving individual and group
-              projects for Liège area companies following the Agile and Scrum
-              methodologies; -Pair/group programming; -Watch presentation
-            </p>
+              <h3>Junior Web Developer</h3>
+              <h5>
+                <em>Becode | Oct 2018 - Mai 2019</em>
+              </h5>
+              <br />
+              <p>
+                Intensive 7 months coding training completed by 3-months
+                internship: -Active learning; -Achieving individual and group
+                projects for Liège area companies following the Agile and Scrum
+                methodologies; -Pair/group programming; -Watch presentation
+              </p>
+            </div>
+            <div className="education-item2">
+              <h3>Accounting technician</h3>
+              <h3>Certificate relating to basic management knowledge</h3>
+              <h5>
+                <em>Saint-Lambert Herstal | 2013</em>
+              </h5>
+            </div>
           </div>
-          <div className="education-item2">
-            <h3>Accounting technician</h3>
-            <h3>Certificate relating to basic management knowledge</h3>
-            <h5>
-              <em>Saint-Lambert Herstal | 2013</em>
-            </h5>
-          </div>
-          </div>
-
         </section>
 
         <div className="separate" />
@@ -41,29 +92,24 @@ class Resume extends React.Component {
           </div>
           <div className="resume-items">
             <div className="resume-item1">
-            <h3>System Developer</h3>
-            <h5>
-              <em>NSI IT Software & Services | May 2019 - Aug 2019</em>
-            </h5>
-            <p>
-              
-            </p>
+              <h3>System Developer</h3>
+              <h5>
+                <em>NSI IT Software & Services | May 2019 - Aug 2019</em>
+              </h5>
+              <p></p>
+            </div>
+            <div className="resume-item2">
+              <h3>Manager-Assistant</h3>
+              <h5>
+                <em>Lidl | Jan 2015 - Mar 2018</em>
+              </h5>
+              <p>
+                Managed a team of 20 employees; Conducted team meetings and
+                trainings to update members on best practices; Planned daily
+                work activities.
+              </p>
+            </div>
           </div>
-          <div
-            className="resume-item2"
-          >
-            <h3>Manager-Assistant</h3>
-            <h5>
-              <em>Lidl | Jan 2015 - Mar 2018</em>
-            </h5>
-            <p>
-              Managed a team of 20 employees; Conducted team meetings and
-              trainings to update members on best practices; Planned daily work
-              activities.
-            </p>
-          </div>
-          </div>
-          
         </section>
 
         <div className="separate" />
