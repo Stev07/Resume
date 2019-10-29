@@ -116,7 +116,7 @@ class Resume extends React.Component {
 
         <section id="skills">
           <div className="skills-box">
-            <div class="skills-html">
+            <div class="skills-html" tooltip="HTML">
               <svg viewBox="0 0 128 128">
                 <path
                   fill="#E44D26"
@@ -136,7 +136,7 @@ class Resume extends React.Component {
                 />
               </svg>
             </div>
-            <div class="skills-css">
+            <div class="skills-css" tooltip="CSS">
               <svg viewBox="0 0 128 128">
                 <path
                   fill="#1572B6"
@@ -164,7 +164,7 @@ class Resume extends React.Component {
                 />
               </svg>
             </div>
-            <div class="skills-js">
+            <div class="skills-js" tooltip="Javascript">
               <svg viewBox="0 0 128 128">
                 <path
                   fill="#F0DB4F"
@@ -176,7 +176,7 @@ class Resume extends React.Component {
                 />
               </svg>
             </div>
-            <div class="skills-node">
+            <div class="skills-node" tooltip="Node.js">
               <svg viewBox="0 0 128 128">
                 <path
                   fill="#83CD29"
@@ -204,7 +204,7 @@ class Resume extends React.Component {
                 />
               </svg>
             </div>
-            <div class="skills-react">
+            <div class="skills-react" tooltip="React">
               <svg
                 viewBox="0 0 256 228"
                 version="1.1"
@@ -218,7 +218,7 @@ class Resume extends React.Component {
                 </g>
               </svg>
             </div>
-            <div class="skills-vue">
+            <div class="skills-vue" tooltip="Vue">
               <svg viewBox="0 0 128 128">
                 <path
                   d="m-2.3125e-8 8.9337 49.854 0.1586 14.167 24.47 14.432-24.47 49.547-0.1577-63.834 110.14zm126.98 0.6374-24.36 0.0207-38.476 66.052-38.453-66.052-24.749-0.0194 63.211 107.89zm-25.149-0.008-22.745 0.16758l-15.053 24.647-14.817-24.647-22.794-0.1679 37.731 64.476zM25.997 9.3929l23.002 0.0087M25.997 9.3929l23.002 0.0087"
@@ -234,7 +234,7 @@ class Resume extends React.Component {
                 />
               </svg>
             </div>
-            <div class="skills-mysql">
+            <div class="skills-mysql" tooltip="Mysql">
               <svg viewBox="0 0 128 128">
                 <path
                   fill="#00618A"
@@ -250,7 +250,7 @@ class Resume extends React.Component {
                 />
               </svg>
             </div>
-            <div class="skills-sass">
+            <div class="skills-sass" tooltip="Sass">
               <svg viewBox="0 0 128 128">
                 <path
                   fill-rule="evenodd"
@@ -260,7 +260,7 @@ class Resume extends React.Component {
                 />
               </svg>
             </div>
-            <div class="skills-git">
+            <div class="skills-git" tooltip="Git">
               <svg
                 viewBox="0 0 48 47"
                 version="1.1"
@@ -289,7 +289,7 @@ class Resume extends React.Component {
                 </g>
               </svg>
             </div>
-            <div className="skills-bootstrap">
+            <div className="skills-bootstrap" tooltip="Bootstrap">
               <svg
                 viewBox="0 0 256 256"
                 version="1.1"
@@ -307,12 +307,8 @@ class Resume extends React.Component {
                 </g>
               </svg>
             </div>
-            <div className="skills-php">
-              <svg
-                viewBox="0 0 256 135"
-                version="1.1"
-                preserveAspectRatio="xMidYMid"
-              >
+            <div className="skills-php" tooltip="PHP">
+              <svg viewBox="0 0 256 150" version="1.1">
                 <g>
                   <ellipse
                     fill="url(#radialGradient-1)"
@@ -369,7 +365,7 @@ class Resume extends React.Component {
                 </g>
               </svg>
             </div>
-            <div className="skills-angular">
+            <div className="skills-angular" tooltip="Angular">
               <svg viewBox="0 0 256 272" version="1.1">
                 <g>
                   <path
