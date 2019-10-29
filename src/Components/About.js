@@ -11,6 +11,7 @@ class About extends React.Component {
 
   componentDidMount() {
     this.animAbout
+      .from('.about-img', 2 , {opacity: 0}, 1)
       .from('h4', 1, {x:'+100vw'},0)
       .from('.about-me-about p', 1, {x:'+100vw'}, 0.3)
       .from('.about-me-details p', 1, {x:'+100vw'}, 0.3)
@@ -26,7 +27,7 @@ class About extends React.Component {
     })
       .setTween(this.animAbout)
       .addTo(this.controller) // assign the scene to the controller
-      .addIndicators()
+      // .addIndicators()
       // .setPin(".about-me-about") // pins the element for the the scene's duration
 
 
