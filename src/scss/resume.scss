@@ -355,6 +355,10 @@
       font-size: 0.6rem;
       font-weight: bold;
   }
+
+  [tooltip]:not([tooltip-persistent]):before {
+    pointer-events: none;
+}
   
 
 }
