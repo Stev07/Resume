@@ -13,8 +13,8 @@ class Contact extends React.Component {
       
         <Form />
         
-          <footer>
-            <div className="citation" data-aos="flip-up"><p>"As far as the future is concerned, it is not a question of predicting it, but of making it possible."</p></div>
+        <footer>
+            <div className="citation"><p>"As far as the future is concerned, it is not a question of predicting it, but of making it possible."</p></div>
             <div className="footer-info">
               <Link
                 className="gotop"
@@ -43,7 +43,7 @@ class Contact extends React.Component {
               </div>
               <p className="made">
                 Made with <i className="fas fa-heart" /> by{" "}
-                <strong>Steve D.</strong>
+                <strong><a href="mailto:steve.dossin@gmail.com">Steve Dossin</a></strong>
               </p>
             </div>
           </footer>

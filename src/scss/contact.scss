@@ -1,29 +1,42 @@
 #contact {
   width: 100vw;
-  height: 100vh;
-  background: #191919;
-  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(18, 63, 87, 0.8), rgba(0, 0, 0, 0.5)),
+    url("../img/jaime-lopes-eY1x1epA24g-unsplash.jpg");
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 
   .contactme {
     color: white;
     text-align: center;
-    padding-top: 50px;
+    font-size: 1.2rem;
+    margin-top: 50px;
   }
 
-  .contact-me, .contact-avaible{
+  .contact-me,
+  .contact-avaible {
     font-weight: bold;
-    color:#46a4d7;
+    color: #46a4d7;
+    font-size: 1.4rem;
   }
 
   footer {
-    height: 50%;
-    position: relative;
+    height: 100%;
+    width: 100vw;
     text-align: center;
+    align-self: flex-end;
 
     .citation {
+      width: 100%;
+      padding: 0 5px;
+      margin-bottom: 15px;
       color: white;
       font-style: italic;
-      font-family:sans-serif !important;
+      font-family: sans-serif !important;
 
       @media screen and (max-width: 576px) {
         font-size: 12px;
@@ -31,20 +44,12 @@
     }
 
     .footer-info {
-      height: 30vh;
-      width: 100%;
-      background: #0f0f0f;
-      position: absolute;
-      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
 
       .gotop {
         width: 100%;
         color: white;
         font-size: 8vh;
-        position: absolute;
-        bottom: 26vh;
-        display: flex;
-        justify-content: center;
 
         i {
           cursor: pointer;
@@ -55,7 +60,6 @@
         display: flex;
         justify-content: center;
         font-size: 30px;
-        padding-top: 25px;
         padding-left: 10px;
 
         .social-icon {
@@ -80,7 +84,11 @@
         text-align: center;
         color: #525252;
         font-family: sans-serif;
-        padding-top: 25px;
+
+        a {
+          text-decoration: none;
+          color: #525252;
+        }
       }
     }
   }
