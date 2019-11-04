@@ -4,6 +4,7 @@ import pomodoro from "../img/projects/pomodoro-ConvertImage.jpg";
 import bookshelf from "../img/projects/bookshelf.png";
 import visages from "../img/projects/visages.png";
 import messenger from "../img/projects/messenger.png";
+import apArt from "../img/projects/Screenshot_2019-11-04 AP-Art - Digital Artist.png";
 
 class Works extends React.Component {
   render() {
@@ -13,18 +14,19 @@ class Works extends React.Component {
           <div className="box">
             <a
               target="_blank"
-              href="https://github.com/Stev07/React_Pomodoro/tree/master"
+              href="http://www.ap-art.me"
             >
               <div className="imgBx">
-                <img src={pomodoro} alt="project" />
+                <img src={apArt} alt="project" />
               </div>
               <div className="contentBx">
                 <div>
-                  <h3>Pomodoro</h3>
+                  <h3>AP-Art</h3>
                   <br />
                   <ul>
                     <li>React</li>
-                    <li>Javascript</li>
+                    <li>GSAP</li>
+                    <li>SVG</li>
                   </ul>
                 </div>
               </div>

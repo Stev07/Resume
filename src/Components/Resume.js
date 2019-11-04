@@ -25,10 +25,10 @@ class Resume extends React.Component {
   componentDidMount() {
     //ANIM DESKTIOP
     this.checkClientWidth() > 771
-      ? (this.animResue.from(".education-item1", 0.8, { x: "+100vw" }),
-        this.animResue.from(".education-item2", 0.8, { x: "+100vw" }),
-        this.animResue.from(".resume-item1", 0.8, { x: "+100vw" }),
-        this.animResue.from(".resume-item2", 0.8, { x: "+100vw" }))
+      ? (this.animResue.from(".education-item1", 0.6, { x: "+100vw" }),
+        this.animResue.from(".education-item2", 0.6, { x: "+100vw" }),
+        this.animResue.from(".resume-item1", 0.6, { x: "+100vw" }),
+        this.animResue.from(".resume-item2", 0.6, { x: "+100vw" }))
       : //ANIM TABLET
       this.checkClientWidth() > 576 && this.checkClientWidth() < 772
       ? (this.animResue.from(".education-title", 1.3, { x: "-100vw" }, 0),
@@ -84,8 +84,7 @@ class Resume extends React.Component {
               <p>
                 Intensive 7 months coding training completed by 3-months
                 internship: -Active learning; -Achieving individual and group
-                projects for Liège area companies following the Agile and Scrum
-                methodologies; -Pair/group programming; -Watch presentation
+                projects following the Agile and Scrum methodologies; -Pair/group programming; -Watch presentation
               </p>
             </div>
             <div className="education-item2">
